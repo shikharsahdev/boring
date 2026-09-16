@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Tide</title>
+<link rel="stylesheet" href="../styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&display=swap" rel="stylesheet">
+<style>:root{--font-display:"Bodoni Moda",Georgia,serif}</style>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--font-text);position:relative;min-height:100vh}
+/* ONE continuous light field behind the whole composition — hero and phone
+   are windows onto the same light, which is what makes it read continuous. */
+.field{position:fixed;inset:-20%;z-index:0;pointer-events:none}
+.field .base{position:absolute;inset:0;filter:blur(90px)}
+.field .streaks{position:absolute;inset:-30%;filter:blur(46px);opacity:.30;transform:rotate(-24deg)}
+.wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) 372px;gap:36px;padding:34px;align-items:start;max-width:1400px;margin:0 auto}
+@media (max-width:1080px){.wrap{grid-template-columns:minmax(0,1fr)}.phone{justify-self:center}}
+.hero{position:relative;border-radius:30px;min-height:640px;display:flex;flex-direction:column;justify-content:flex-end;padding:52px 46px 46px;overflow:hidden}
+.navbar{position:absolute;top:16px;left:16px;right:16px;display:flex;align-items:center;gap:26px;padding:13px 24px;border-radius:999px;backdrop-filter:blur(16px);font-size:15px;z-index:2;white-space:nowrap;overflow:hidden}
+.navbar .sp{flex:1}
+.hero h1{font-family:var(--font-display);font-weight:400;font-size:clamp(40px,5.1vw,66px);line-height:1.04;letter-spacing:-.022em;margin:0;max-width:18ch;position:relative;z-index:1}
+.hero h1 em{font-style:italic}
+.hero p{position:relative;z-index:1;font-size:19px;line-height:1.6;margin:22px 0 0;max-width:42ch}
+.ctarow{display:flex;gap:11px;margin-top:32px;position:relative;z-index:1;flex-wrap:wrap}
+.cta{display:inline-flex;align-items:center;justify-content:center;height:54px;padding:0 28px;border-radius:999px;font-size:18px;font-weight:600;text-decoration:none;white-space:nowrap}
+.ghost{background:rgba(255,255,255,.60);backdrop-filter:blur(12px)}
+.swatches{display:flex;border-radius:16px;overflow:hidden;margin-top:26px;position:relative;z-index:1}
+.swatches div{flex:1;height:48px}
+.phone{width:372px;border-radius:42px;padding:9px;box-shadow:0 34px 76px -34px rgba(20,28,24,.42)}
+.screen{position:relative;border-radius:34px;overflow:hidden;height:748px;display:flex;flex-direction:column}
+/* Hero moment only: the header is the light; the rest of the screen is calm paper. */
+.apphead{position:relative;padding:14px 22px 30px;overflow:hidden}
+.apphead .lite{position:absolute;inset:-60% -20% -20%;filter:blur(52px)}
+.stat{display:flex;justify-content:space-between;font-family:var(--font-numeric);font-size:13px;position:relative;z-index:2}
+.markrow{display:flex;align-items:center;gap:11px;margin-top:22px;position:relative;z-index:2}
+.markrow .nm{font-family:var(--font-display);font-size:23px;letter-spacing:-.02em}
+.greet{font-family:var(--font-display);font-weight:400;font-size:33px;letter-spacing:-.025em;margin:20px 0 4px;position:relative;z-index:2;line-height:1.12}
+.sub{font-size:15px;margin:0;position:relative;z-index:2}
+.body{flex:1;padding:22px;overflow:hidden}
+.tile{border-radius:22px;padding:19px;margin-bottom:11px}
+.tile .lbl{font-size:12px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;margin:0 0 7px}
+.tile h3{font-family:var(--font-display);font-weight:400;font-size:23px;letter-spacing:-.02em;margin:0}
+.tile p{font-size:14px;line-height:1.5;margin:7px 0 0}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:5px 13px;border-radius:999px;font-size:13px;font-weight:600;margin-top:13px}
+.dot{width:7px;height:7px;border-radius:999px}
+.tabbar{display:flex;justify-content:space-around;padding:11px 0 17px;backdrop-filter:blur(12px)}
+.tabbar span{font-size:11px;display:flex;flex-direction:column;align-items:center;gap:5px}
+.glyph{width:22px;height:22px;border-radius:7px}
+/* Breath: the loading / waiting state. Arcs widen and fade outward, slowly. */
+@keyframes breathe{0%{opacity:.18;transform:scale(.82)}45%{opacity:1}100%{opacity:.18;transform:scale(1.1)}}
+.loading svg g path{transform-box:fill-box;transform-origin:50% 100%;animation:breathe 3.4s var(--ease-in-out) infinite}
+.loading svg g .a2{animation-delay:.34s}
+.loading svg g .a3{animation-delay:.68s}
+.load{display:flex;align-items:center;gap:14px;border-radius:22px;padding:17px 19px;margin-top:11px}
+.load p{margin:0;font-size:14px;line-height:1.45}
+.note{grid-column:1/-1;font-size:15px;line-height:1.65;padding-top:20px;margin:0;border-top:1px solid rgba(20,28,24,.16)}
+
+body{background:#F7FAF9;color:#0F1D1A}
+.field .base{background:linear-gradient(152deg,#EAF7F2 0%,#BCE6DD 20%,#82CBC8 40%,#49A8B4 60%,#22809B 80%,#0F5A6E 100%)}
+.field .streaks{background:repeating-linear-gradient(74deg,rgba(255,255,255,.60) 0 5%,rgba(255,255,255,0) 5% 13%,rgba(60,150,160,.38) 13% 17%,rgba(255,255,255,0) 17% 27%)}
+.hero{background:rgba(247,250,249,.06)}
+.hero h1,.hero p{color:#0C231F}
+.navbar{background:rgba(247,250,249,.72);color:#0C231F}
+.cta{background:#0E5468;color:#F2FAFB}
+.ghost{color:#0C231F}
+.phone{background:#E2EAE7}
+.screen{background:#F7FAF9}
+.apphead{color:#0C2A28}
+.apphead .lite{background:linear-gradient(152deg,#E8F6F1 0%,#B6E2DA 46%,#7AC4C6 100%)}
+.stat{color:#4A6A66}
+.markrow .nm,.greet{color:#0C2A28}
+.sub{color:#4A6A66}
+.body{background:#F7FAF9}
+.tile.one{background:#E7F3EF}.tile.one .lbl{color:#16746A}.tile.one h3{color:#092C27}.tile.one p{color:#36564F}
+.tile.two{background:#FBF2DA}.tile.two .lbl{color:#8A6614}.tile.two h3{color:#33270B}.tile.two p{color:#5E4E29}
+.load{background:#EDF2F3}.load p{color:#46595C}
+.tabbar{background:rgba(247,250,249,.90);color:#74888A;border-top:1px solid #E1EAE9}
+</style></head><body><aside style="position:relative;z-index:100;padding:14px 24px;background:var(--boring-palette-paper);color:var(--boring-palette-ink);font:15px var(--font-text);border-bottom:1px solid var(--boring-palette-line)">Archived exploration · <a href="../index.html">View the approved Boring site</a> · <a href="../library/">Design library</a></aside>
+<div class="field"><div class="base"></div><div class="streaks"></div></div>
+<div class="wrap">
+<section class="hero">
+<div class="navbar"><span style="font-family:var(--font-display);font-size:22px;font-weight:500">Boring</span><span class="sp"></span><span>How it works</span><span>Plans</span><span>For your parents</span></div>
+<h1><em>Quietly</em> handled, every season.</h1>
+<p>Lab panels at home, a doctor who reads them, and a care team that knows your family.</p>
+<div class="ctarow"><a class="cta" href="#">See plans</a><a class="cta ghost" href="#">Talk to us first</a></div>
+<div class="swatches"><div style="background:#EAF7F2"></div><div style="background:#BCE6DD"></div><div style="background:#82CBC8"></div><div style="background:#49A8B4"></div><div style="background:#0F5A6E"></div><div style="background:#0F1D1A"></div></div>
+</section>
+<div class="phone"><div class="screen">
+<div class="apphead"><div class="lite"></div>
+<div class="stat"><span>9:41</span><span>● ‹›  ▮</span></div>
+<div class="markrow"><svg viewBox="0 0 200 140" width="30" style="display:block;overflow:visible">
+<g fill="none" stroke="#0F5A5A" stroke-linecap="round">
+<path class="a3" d="M18 120 a82 82 0 0 1 164 0" stroke-width="7" opacity=".28"/>
+<path class="a2" d="M46 120 a54 54 0 0 1 108 0" stroke-width="7" opacity=".55"/>
+<path class="a1" d="M74 120 a26 26 0 0 1 52 0" stroke-width="7"/>
+</g>
+<circle class="core" cx="100" cy="120" r="10" fill="#0F5A5A"/>
+</svg><span class="nm">Boring</span></div>
+<p class="greet">Good evening,<br>Nikhil</p>
+<p class="sub">Nothing needs you today.</p>
+</div>
+<div class="body">
+<div class="tile one"><p class="lbl">Next up</p><h3>Blood panel at home</h3><p>Tue 18 March, 7–9am · for Sarita</p><span class="pill" style="background:#D5EAE6;color:#10635A"><span class="dot" style="background:#2E9A8A"></span>In 8 days</span></div>
+<div class="tile two"><p class="lbl">Sarita · 64</p><h3>All twelve in range</h3><p>Thyroid steady since June. Vitamin D still climbing.</p></div>
+<div class="load"><span class="loading"><svg viewBox="0 0 200 140" width="40" style="display:block;overflow:visible">
+<g fill="none" stroke="#0F5A5A" stroke-linecap="round">
+<path class="a3" d="M18 120 a82 82 0 0 1 164 0" stroke-width="7" opacity=".28"/>
+<path class="a2" d="M46 120 a54 54 0 0 1 108 0" stroke-width="7" opacity=".55"/>
+<path class="a1" d="M74 120 a26 26 0 0 1 52 0" stroke-width="7"/>
+</g>
+<circle class="core" cx="100" cy="120" r="10" fill="#0F5A5A"/>
+</svg></span><p>Dr Rao is reading Anil's panel. We'll text you when it's done.</p></div>
+</div>
+<div class="tabbar"><span><span class="glyph" style="background:#0E5468"></span>Home</span><span><span class="glyph" style="background:#DCE6E5"></span>Results</span><span><span class="glyph" style="background:#DCE6E5"></span>Visits</span><span><span class="glyph" style="background:#DCE6E5"></span>Care</span><span><span class="glyph" style="background:#DCE6E5"></span>You</span></div>
+</div></div>
+<p class="note"><strong>Tide.</strong> The same continuous treatment in water tones — pale sea through to deep petrol, with a warm yellow held back for attention only. Cooler and crisper than Meadow. Same <em>breath</em> mark and the same single light field behind hero and app header.</p>
+</div></body></html>

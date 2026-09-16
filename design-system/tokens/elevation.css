@@ -1,0 +1,8 @@
+:root {
+ --shadow-none: var(--boring-shadow-none);
+ --shadow-hairline: var(--boring-shadow-none);
+ --shadow-card: var(--boring-shadow-raised);
+ --shadow-raised: var(--boring-shadow-raised);
+ --shadow-sheet: var(--boring-shadow-sheet);
+ --shadow-inset-well: var(--boring-shadow-none);
+}

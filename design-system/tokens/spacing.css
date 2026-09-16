@@ -1,0 +1,34 @@
+:root {
+  /* 4px base. Generous by default: the smallest gap between two distinct
+     pieces of content is 12px, and sections breathe at 40–72px. */
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 56px;
+  --space-10: var(--boring-space-80);
+  --space-11: 96px;
+  --space-12: 128px;
+
+  --gutter-mobile: var(--boring-layout-gutter-mobile);
+  --gutter-desktop: var(--space-8);
+  --section-gap-mobile: var(--space-8);
+  --section-gap-desktop: var(--space-11);
+
+  --card-padding: var(--space-6);
+  --card-gap: var(--space-4);
+
+  --measure-prose: 62ch;
+  --measure-narrow: 46ch;
+  --container-max: 1120px;
+  --container-reading: 720px;
+
+  /* Touch: 48px minimum, 56px for anything a parent taps. */
+  --tap-min: 48px;
+  --tap-comfortable: 56px;
+}

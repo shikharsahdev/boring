@@ -1,0 +1,4 @@
+.DS_Store
+node_modules/
+# Reference screenshots of third-party apps; not part of the site
+design-system/uploads/

@@ -1,0 +1,27 @@
+<!-- @dsCard group="Components" viewport="700x320" name="Feedback" subtitle="Dialog sheet, toasts, tooltip" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:20px}@keyframes boring-dialog-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Dialog, Toast, Tooltip, Button } = window.BoringDesignSystem_7ec2e7;
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <div style={{display:"grid",gridTemplateColumns:"330px 1fr",gap:24,alignItems:"start"}}>
+    <div style={{position:"relative",height:280,borderRadius:"var(--radius-lg)",border:"1px solid var(--border-subtle)",overflow:"hidden",background:"var(--paper-2)"}}>
+      <Dialog open variant="sheet" title="Book the home visit?"
+        description="Tuesday 18 March, 7–9am. A phlebotomist comes to your mother's address in Pune."
+        footer={<><Button fullWidth>Confirm</Button><Button variant="secondary" fullWidth>Not now</Button></>} />
+    </div>
+    <div style={{display:"grid",gap:16,justifyItems:"start"}}>
+      <Toast>Visit booked. We've texted your mother the timing.</Toast>
+      <Toast tone="attention" icon="clock" onDismiss={()=>{}}>We'll call you back within the hour.</Toast>
+      <p style={{margin:"8px 0 0",fontSize:"var(--text-base)",color:"var(--text-body)"}}>
+        Her <Tooltip content="HbA1c shows average blood sugar over about three months."><span style={{borderBottom:"1px dashed var(--border-strong)",cursor:"help"}}>HbA1c</span></Tooltip> has stayed flat since June.
+      </p>
+    </div>
+  </div>
+);
+</script></body></html>

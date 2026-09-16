@@ -1,0 +1,15 @@
+/* Interaction motion. Little b waiting animation lives in happy-longevity/motion.css. */
+:root {
+ --duration-instant: var(--boring-motion-duration-instant);
+ --duration-fast: var(--boring-motion-duration-fast);
+ --duration-base: var(--boring-motion-duration-base);
+ --duration-slow: var(--boring-motion-duration-slow);
+ --duration-sheet: var(--boring-motion-duration-sheet);
+ --ease-out: var(--boring-motion-easing-out);
+ --ease-in-out: var(--boring-motion-easing-in-out);
+ --ease-entrance: var(--boring-motion-easing-entrance);
+ --transition-control: color var(--duration-fast) var(--ease-out), background-color var(--duration-fast) var(--ease-out), border-color var(--duration-fast) var(--ease-out);
+}
+@media (prefers-reduced-motion: reduce) {
+ *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; scroll-behavior: auto !important; }
+}

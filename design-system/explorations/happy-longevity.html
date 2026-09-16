@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fffbf2">
+  <title>Boring · A little care. A lot more living.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="happy-longevity.css">
+  <script src="happy-longevity.js" defer></script>
+</head>
+<body data-palette="daylight">
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <symbol id="little-b" viewBox="0 0 128 136">
+        <path class="b-body" d="M35 10C25 10 19 17 19 28v57c0 25 18 42 44 42 28 0 48-19 48-46 0-26-18-44-43-44-7 0-12 1-17 4V28c0-11-6-18-16-18Z"/>
+        <g class="b-face" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round">
+          <g class="b-eyes"><path d="M54 68v3"/><path d="M80 68v3"/></g>
+          <path d="M52 85c6 13 23 16 32-1"/>
+        </g>
+      </symbol>
+      <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+      <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+      <symbol id="calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M8 3v5m8-5v5M4 11h16"/></symbol>
+      <symbol id="heart" viewBox="0 0 24 24"><path d="M20 5c-3-3-6-1-8 1-2-2-5-4-8-1s-1 7 1 9l7 7 7-7c2-2 4-6 1-9Z"/></symbol>
+      <symbol id="home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3ZM9 20v-7h6v7"/></symbol>
+      <symbol id="chat" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 1-8 8H4l1-5a8 8 0 1 1 15-3Z"/><path d="M8 10h8m-8 4h5"/></symbol>
+    </defs>
+  </svg>
+  <a class="skip-link" href="#main">Skip to the exploration</a>
+  <header class="topbar">
+    <a class="brand" href="#main" aria-label="Boring, top of exploration"><svg class="mark" aria-hidden="true"><use href="#little-b"/></svg><span>boring</span></a>
+    <span class="edition">A happier kind of healthcare <span class="edition-dot">·</span> Direction 03</span>
+    <a class="toplink" href="#in-practice">See it in practice <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a>
+  </header>
+  <main id="main">
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span class="tiny-sun" aria-hidden="true"></span> The good in ordinary</p>
+        <h1 id="intro-title">A little care.<br>A lot more <span class="living">living.<svg viewBox="0 0 280 18" aria-hidden="true"><path d="M4 12Q130-2 276 9"/></svg></span></h1>
+        <p class="lead">Health, quietly taken care of.<br>So there’s more room for the things you love.</p>
+        <div class="intro-foot"><span class="index">01 /</span><p>A warmer world for Boring.<br>Trustworthy, human, and quietly happy.</p></div>
+      </div>
+      <div class="character-stage">
+        <div class="stage-top"><span>Meet little b</span><span class="outline-tag">Brand character + mark</span></div>
+        <div class="character-scene" aria-label="A rounded lowercase b with a small, friendly smile">
+          <div class="sun-disc"></div><div class="ground"></div>
+          <svg class="hero-character mark" aria-hidden="true"><use href="#little-b"/></svg>
+          <span class="scene-note">Here for the everyday.</span>
+        </div>
+        <div class="stage-bottom"><span>A familiar face.<br>A distinctly Boring shape.</span><svg class="mini-character mark" aria-hidden="true"><use href="#little-b"/></svg></div>
+      </div>
+    </section>
+    <section class="palette-bar" aria-label="Explore colour directions">
+      <div><span class="eyebrow">Find the feeling</span><p>Same little b. Three different moods.</p></div>
+      <div class="palette-controls" role="group" aria-label="Colour palette">
+        <button class="palette-button" data-theme="daylight" aria-pressed="true"><span class="pair daylight" aria-hidden="true"></span>Butter & blue<span class="choice-note">Recommended</span></button>
+        <button class="palette-button" data-theme="garden" aria-pressed="false"><span class="pair garden" aria-hidden="true"></span>Apricot & pine</button>
+        <button class="palette-button" data-theme="soft" aria-pressed="false"><span class="pair soft" aria-hidden="true"></span>Lilac & plum</button>
+      </div>
+      <p id="palette-status" class="sr-only" role="status"></p>
+    </section>
+    <section class="identity-section" aria-labelledby="identity-title">
+      <div class="section-heading"><div><p class="eyebrow">A smile with a purpose</p><h2 id="identity-title">Small enough to be a logo.<br>Warm enough to feel like company.</h2></div><p>The <strong>b</strong> gives it a name. The smile gives it a personality. Rounded, open lettering makes the rest of the system feel just as approachable.</p></div>
+      <div class="identity-grid">
+        <article class="wordmark-card"><span class="card-label">The everyday signature</span><div class="brand large-brand"><svg class="mark" aria-hidden="true"><use href="#little-b"/></svg><span>boring</span></div><p>Good health. More life.</p><a class="asset-link" href="../assets/little-b/little-b-daylight.svg" download>Download the mark <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a></article>
+        <article class="mono-card"><span class="card-label">Still itself in one colour</span><svg class="mark mono-mark" role="img" aria-label="Boring little b in a single ink colour"><use href="#little-b"/></svg><span class="small-caption">A stamp. A report. A familiar hello.</span></article>
+        <article class="scale-card"><span class="card-label">Made for the small moments</span><div class="scale-line"><svg class="mark" width="72" height="77" aria-hidden="true"><use href="#little-b"/></svg><svg class="mark" width="40" height="43" aria-hidden="true"><use href="#little-b"/></svg><svg class="mark" width="24" height="26" aria-hidden="true"><use href="#little-b"/></svg></div><p>A home-screen icon.<br>A welcome. A little reassurance.</p><div class="app-icon"><svg class="mark" aria-hidden="true"><use href="#little-b"/></svg></div></article>
+      </div>
+    </section>
+    <section class="motion-section" id="motion" aria-labelledby="motion-title">
+      <div class="motion-description"><p class="eyebrow">A gentle moment in between</p><h2 id="motion-title">Even the waiting<br>can feel cared for.</h2><p>Little b settles from side to side and gives a slow blink. A small, steady presence while something loads.</p><button class="text-button" id="motion-toggle" aria-pressed="false">Pause motion <span aria-hidden="true">Ⅱ</span></button><p class="motion-access" id="motion-note">A quiet 3.6-second rhythm. Reduced motion is respected automatically.</p></div>
+      <div class="loader-demo"><span class="card-label">Live loading study</span><div class="loader-center"><svg class="mark waiting" id="loader-character" aria-hidden="true"><use href="#little-b"/></svg><p id="loader-message" role="status" aria-live="polite">Getting things ready for you</p><span id="loader-detail">A little moment. Then you’re on your way.</span></div><button class="replay-button" id="replay-loader">Try the loading moment <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></button></div>
+    </section>
+    <section class="application-section" id="in-practice" aria-labelledby="application-title">
+      <div class="application-copy"><p class="eyebrow">The feeling, in practice</p><h2 id="application-title">Care in the background.<br>Life in the foreground.</h2><p>Warmth belongs in the welcome. Clarity belongs in the care. A friendly header leads into readable appointments, plain language, and a clear next step.</p><div class="principle"><span>01</span><div><h3>A little joy, with room to breathe</h3><p>One character moment. Warm paper. Generous space.</p></div></div><div class="principle"><span>02</span><div><h3>Calm colour. Clear information.</h3><p>Ink blue anchors actions. Soft colour supports the story.</p></div></div><div class="principle"><span>03</span><div><h3>Reassurance that means something</h3><p>Say what happens next, who is helping, and when.</p></div></div></div>
+      <div class="phone-area"><span class="prototype-label">Illustrative member experience</span><div class="phone"><div class="phone-top"><span>9:41</span><span class="phone-camera" aria-hidden="true"></span><svg width="25" height="12" viewBox="0 0 25 12" aria-hidden="true"><rect x="1" y="1" width="20" height="10" rx="3" fill="none" stroke="currentColor"/><rect x="3" y="3" width="16" height="6" rx="1" fill="currentColor"/><path d="M24 4v4" stroke="currentColor"/></svg></div><div class="app-welcome"><div class="app-brand-row"><span class="brand app-wordmark">boring</span><span class="avatar" aria-label="Nikhil">N</span></div><div class="greeting-row"><div><p class="greeting-small">Good morning, Nikhil</p><h3>A good day<br>for the everyday.</h3></div><svg class="mark" aria-hidden="true"><use href="#little-b"/></svg></div><span class="welcome-note">Your family’s care, all in one place.</span></div><div class="app-content"><div class="family-tabs" role="group" aria-label="Family member"><button data-person="Sarita" aria-pressed="true">Mum · Sarita</button><button data-person="Anil" aria-pressed="false">Dad · Anil</button></div><div class="appointment"><div class="appointment-top"><span class="icon-tile"><svg class="icon" aria-hidden="true"><use href="#calendar"/></svg></span><span>Next on the calendar</span></div><h4>Health check, at home</h4><p id="appointment-time">Tue, 22 September · 7–9 am</p><div class="appointment-footer"><span class="confirmed"><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Confirmed</span><button id="visit-details" aria-expanded="false" aria-controls="visit-note">Details <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></button></div><p class="visit-note" id="visit-note" hidden>We’ll call Sarita the evening before to confirm the visit and explain any preparation.</p></div><div class="care-row"><span class="doctor-avatar">AR</span><div><strong>A familiar person to turn to</strong><p>Your care team is a message away.</p></div></div><button class="care-button" id="care-demo">Say hello to your care team <svg class="icon" aria-hidden="true"><use href="#chat"/></svg></button><p class="demo-note" id="care-note" role="status" hidden>In the product, this opens your conversation with the care team.</p></div><div class="app-bottom" aria-label="Example app navigation"><span class="active"><svg class="icon" aria-hidden="true"><use href="#home"/></svg>Home</span><span><svg class="icon" aria-hidden="true"><use href="#heart"/></svg>Health</span><span><svg class="icon" aria-hidden="true"><use href="#calendar"/></svg>Visits</span><span><svg class="icon" aria-hidden="true"><use href="#chat"/></svg>Care</span></div><div class="home-indicator" aria-hidden="true"></div></div></div>
+    </section>
+    <section class="foundations" aria-labelledby="foundation-title"><div class="section-heading"><div><p class="eyebrow">The supporting cast</p><h2 id="foundation-title">A system with a softer side.</h2></div><p>Friendly display type, highly readable body copy, and a palette with warmth built in.</p></div><div class="foundation-grid"><div class="type-spec"><span class="card-label">Nunito Sans + DM Sans</span><p class="type-large">Hello, life.</p><p>Little routines. Familiar faces.<br>More of the days that matter.</p><div class="type-sample">Aa Bb Cc &nbsp; 0123456789</div></div><div class="colours"><div class="colour-swatch" data-swatch="paper"><span>Warm paper</span><code>#FFFBF2</code></div><div class="colour-swatch" data-swatch="ink"><span>Trust ink</span><code>#294968</code></div><div class="colour-swatch" data-swatch="butter"><span>Little b</span><code>#F2CA66</code></div><div class="colour-swatch" data-swatch="sky"><span>A little air</span><code>#E0EDF4</code></div></div></div></section>
+    <aside class="tone-note"><svg class="icon" aria-hidden="true"><use href="#heart"/></svg><p><strong>A happy brand can still take health seriously.</strong> Keep the character for welcomes, loading, and everyday moments. Results and difficult news need plain language, accurate urgency, and a clear path to a human.</p></aside>
+  </main>
+  <footer><div class="brand footer-brand"><svg class="mark" aria-hidden="true"><use href="#little-b"/></svg><span>boring</span></div><p>More ordinary days. More life in them.</p><span>Visual exploration · September 2026</span></footer>
+</body>
+</html>

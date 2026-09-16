@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--gradient-page);
+  background-attachment: fixed;
+  color: var(--text-body);
+  font-family: var(--type-body-font);
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
+  font-weight: var(--type-body-weight);
+  -webkit-font-smoothing: antialiased;
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--type-heading-font);
+  font-weight: var(--type-heading-weight);
+  color: var(--text-title);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  margin: 0;
+}
+
+h1, .ds-display { font-weight: var(--boring-font-weight-bold); letter-spacing: var(--tracking-display); }
+.ds-wordmark { font: var(--boring-typography-wordmark); letter-spacing: var(--boring-font-tracking-wordmark); }
+button, input, select, textarea { font: inherit; }
+img, svg { max-width: 100%; }
+[hidden] { display: none !important; }
+.ds-rule { height: 1px; border: 0; background: var(--gradient-hairline); }
+
+a { color: var(--text-link); text-decoration-thickness: 1px; text-underline-offset: 3px; transition: color var(--duration-fast) var(--ease-out); }
+a:hover { color: var(--text-link-hover); }
+
+:focus-visible { outline: var(--boring-border-focus) solid var(--border-focus); outline-offset: var(--boring-border-focus-offset); }
+
+.ds-label {
+  font-family: var(--type-label-font);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  letter-spacing: var(--type-label-tracking);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.ds-num { font-family: var(--type-numeric-font); font-feature-settings: var(--type-numeric-features); }

@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700;800&family=Mukta:wght@400;500;600;700&display=swap");
+:root {
+ --font-display: var(--boring-font-family-display), "Mukta", system-ui, sans-serif;
+ --font-text: var(--boring-font-family-body), "Mukta", system-ui, sans-serif;
+ --font-hindi-display: "Mukta", system-ui, sans-serif;
+ --font-hindi-text: "Mukta", system-ui, sans-serif;
+ --font-numeric: var(--font-text);
+}
+[data-lang="hi"], [data-lang="mr"] { --font-display: var(--font-hindi-display); --font-text: var(--font-hindi-text); }

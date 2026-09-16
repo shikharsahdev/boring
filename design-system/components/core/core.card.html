@@ -1,0 +1,44 @@
+<!-- @dsCard group="Components" viewport="700x340" name="Core" subtitle="Button, IconButton, Card, Badge, Tag, Icon, LittleB" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:20px}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:14px}</style>
+</head><body><div id="root"></div>
+<script type="text/babel">
+const { Button, IconButton, Card, Badge, Tag, Icon, LittleB } = window.BoringDesignSystem_7ec2e7;
+ReactDOM.createRoot(document.getElementById("root")).render(<>
+  <div className="row">
+    <Button>Book a consult</Button>
+    <Button variant="secondary">See last panel</Button>
+    <Button variant="quiet" iconRight="arrow-right">How it works</Button>
+    <Button variant="inverse">Talk to us</Button>
+    <Button disabled>Disabled</Button>
+  </div>
+  <div className="row">
+    <Button size="lg" iconLeft="phone">Call care team</Button>
+    <Button size="sm" variant="secondary">Small</Button>
+    <IconButton name="chevron-left" label="Back" variant="filled" />
+    <IconButton name="download" label="Download" variant="filled" />
+    <IconButton name="bell" label="Reminders" />
+    <Icon name="flask-conical" size={26} style={{color:"var(--sage-600)"}} />
+    <LittleB size={30} />
+    <LittleB size={30} state="waiting" />
+  </div>
+  <div className="row">
+    <Badge status="normal">In range</Badge>
+    <Badge status="attention">Due in 3 weeks</Badge>
+    <Badge status="action">Needs your ok</Badge>
+    <Badge status="neutral" dot={false}>Report ready</Badge>
+    <Tag selected>All results</Tag>
+    <Tag>Thyroid</Tag>
+    <Tag onRemove={()=>{}}>Lipids</Tag>
+  </div>
+  <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:12}}>
+    <Card padding="sm"><p className="ds-label" style={{margin:0}}>Paper</p><p style={{margin:"6px 0 0",fontFamily:"var(--font-display)",fontSize:21,color:"var(--text-title)"}}>Full blood panel</p></Card>
+    <Card tone="calm" padding="sm"><p className="ds-label" style={{margin:0}}>Calm</p><p style={{margin:"6px 0 0",fontFamily:"var(--font-display)",fontSize:21,color:"var(--text-title)"}}>All in range</p></Card>
+    <Card tone="inverse" padding="sm" elevation="card"><p className="ds-label" style={{margin:0,color:"var(--paper-3)"}}>Inverse</p><p style={{margin:"6px 0 0",fontFamily:"var(--font-display)",fontSize:21}}>Care team</p></Card>
+  </div>
+</>);
+</script></body></html>

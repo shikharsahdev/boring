@@ -1,0 +1,13 @@
+:root {
+ --radius-xs: var(--boring-radius-small);
+ --radius-sm: var(--boring-radius-small);
+ --radius-md: var(--boring-radius-control);
+ --radius-lg: var(--boring-radius-card);
+ --radius-xl: var(--boring-radius-hero);
+ --radius-2xl: var(--boring-radius-sheet);
+ --radius-pill: var(--boring-radius-pill);
+ --radius-card: var(--boring-radius-card);
+ --radius-control: var(--boring-radius-control);
+ --radius-sheet: var(--boring-radius-sheet);
+ --radius-chip: var(--boring-radius-pill);
+}

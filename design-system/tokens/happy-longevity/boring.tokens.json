@@ -1,0 +1,1673 @@
+{
+  "$description": "Boring Happy Longevity 1.0.0 — approved butter-and-blue direction. Canonical design tokens; generated exports must not be edited.",
+  "$extensions": {
+    "com.boring.design": {
+      "version": "1.0.0",
+      "theme": "butter-and-blue",
+      "format": "DTCG 2025.10",
+      "source": "explorations/happy-longevity.html",
+      "approved": "2026-09-16",
+      "notes": "Core identity extracted from the approved exploration. Interaction and feedback roles extend it for reusable components. Alternate exploration palettes are not production themes."
+    }
+  },
+  "palette": {
+    "paper": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1.0,
+          0.98431373,
+          0.94901961
+        ],
+        "alpha": 1,
+        "hex": "#FFFBF2"
+      },
+      "$description": "Approved exploration colour."
+    },
+    "card": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1.0,
+          0.99607843,
+          0.98039216
+        ],
+        "alpha": 1,
+        "hex": "#FFFEFA"
+      },
+      "$description": "Approved exploration colour."
+    },
+    "ink": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.16078431,
+          0.28627451,
+          0.40784314
+        ],
+        "alpha": 1,
+        "hex": "#294968"
+      },
+      "$description": "Approved exploration colour."
+    },
+    "ink-hover": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.1254902,
+          0.23529412,
+          0.3372549
+        ],
+        "alpha": 1,
+        "hex": "#203C56"
+      },
+      "$description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "ink-pressed": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.09411765,
+          0.18823529,
+          0.27843137
+        ],
+        "alpha": 1,
+        "hex": "#183047"
+      },
+      "$description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "muted": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.34901961,
+          0.41176471,
+          0.47058824
+        ],
+        "alpha": 1,
+        "hex": "#596978"
+      },
+      "$description": "Approved exploration colour."
+    },
+    "butter": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.94901961,
+          0.79215686,
+          0.4
+        ],
+        "alpha": 1,
+        "hex": "#F2CA66"
+      },
+      "$description": "Approved exploration colour."
+    },
+    "sky": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.87843137,
+          0.92941176,
+          0.95686275
+        ],
+        "alpha": 1,
+        "hex": "#E0EDF4"
+      },
+      "$description": "Approved exploration colour."
+    },
+    "wash": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.96862745,
+          0.9372549,
+          0.85098039
+        ],
+        "alpha": 1,
+        "hex": "#F7EFD9"
+      },
+      "$description": "Approved exploration colour."
+    },
+    "line": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.86666667,
+          0.87058824,
+          0.85490196
+        ],
+        "alpha": 1,
+        "hex": "#DDDEDA"
+      },
+      "$description": "Approved exploration colour."
+    },
+    "line-strong": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.48235294,
+          0.52941176,
+          0.56470588
+        ],
+        "alpha": 1,
+        "hex": "#7B8790"
+      },
+      "$description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "sage": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.89411765,
+          0.92941176,
+          0.86666667
+        ],
+        "alpha": 1,
+        "hex": "#E4EDDD"
+      },
+      "$description": "Approved exploration colour."
+    },
+    "sage-ink": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.24313725,
+          0.36078431,
+          0.23137255
+        ],
+        "alpha": 1,
+        "hex": "#3E5C3B"
+      },
+      "$description": "Approved exploration colour."
+    },
+    "attention": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.97254902,
+          0.9254902,
+          0.83137255
+        ],
+        "alpha": 1,
+        "hex": "#F8ECD4"
+      },
+      "$description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "attention-ink": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.4745098,
+          0.32156863,
+          0.07843137
+        ],
+        "alpha": 1,
+        "hex": "#795214"
+      },
+      "$description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "error": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.97647059,
+          0.90588235,
+          0.88627451
+        ],
+        "alpha": 1,
+        "hex": "#F9E7E2"
+      },
+      "$description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "error-ink": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.58039216,
+          0.23137255,
+          0.19607843
+        ],
+        "alpha": 1,
+        "hex": "#943B32"
+      },
+      "$description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "disabled": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.90588235,
+          0.90588235,
+          0.87843137
+        ],
+        "alpha": 1,
+        "hex": "#E7E7E0"
+      },
+      "$description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "disabled-ink": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.38823529,
+          0.43921569,
+          0.48235294
+        ],
+        "alpha": 1,
+        "hex": "#63707B"
+      },
+      "$description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "shadow": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.16078431,
+          0.28627451,
+          0.40784314
+        ],
+        "alpha": 0.16,
+        "hex": "#294968"
+      },
+      "$description": "Tinted low-opacity shadow. Use only on floating surfaces."
+    },
+    "scrim": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.16078431,
+          0.28627451,
+          0.40784314
+        ],
+        "alpha": 0.28,
+        "hex": "#294968"
+      },
+      "$description": "Modal backdrop; never use as a text colour."
+    },
+    "phone-shadow": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.16078431,
+          0.28627451,
+          0.40784314
+        ],
+        "alpha": 0.33333333,
+        "hex": "#294968"
+      },
+      "$description": "Presentation-only phone elevation from the approved exploration."
+    }
+  },
+  "color": {
+    "surface": {
+      "page": {
+        "$type": "color",
+        "$value": "{palette.paper}"
+      },
+      "card": {
+        "$type": "color",
+        "$value": "{palette.card}"
+      },
+      "welcome": {
+        "$type": "color",
+        "$value": "{palette.sky}"
+      },
+      "warm": {
+        "$type": "color",
+        "$value": "{palette.wash}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{palette.disabled}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{palette.ink}"
+      },
+      "scrim": {
+        "$type": "color",
+        "$value": "{palette.scrim}"
+      }
+    },
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": "{palette.ink}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{palette.muted}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{palette.paper}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{palette.disabled-ink}"
+      },
+      "link": {
+        "$type": "color",
+        "$value": "{palette.ink}"
+      }
+    },
+    "brand": {
+      "character": {
+        "$type": "color",
+        "$value": "{palette.butter}"
+      },
+      "face": {
+        "$type": "color",
+        "$value": "{palette.ink}"
+      }
+    },
+    "border": {
+      "subtle": {
+        "$type": "color",
+        "$value": "{palette.line}"
+      },
+      "control": {
+        "$type": "color",
+        "$value": "{palette.line-strong}"
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{palette.ink}"
+      }
+    },
+    "action": {
+      "primary": {
+        "$type": "color",
+        "$value": "{palette.ink}"
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{palette.ink-hover}"
+      },
+      "pressed": {
+        "$type": "color",
+        "$value": "{palette.ink-pressed}"
+      },
+      "on-primary": {
+        "$type": "color",
+        "$value": "{palette.paper}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{palette.card}"
+      },
+      "secondary-hover": {
+        "$type": "color",
+        "$value": "{palette.sky}"
+      }
+    },
+    "status": {
+      "success": {
+        "background": {
+          "$type": "color",
+          "$value": "{palette.sage}"
+        },
+        "foreground": {
+          "$type": "color",
+          "$value": "{palette.sage-ink}"
+        }
+      },
+      "attention": {
+        "background": {
+          "$type": "color",
+          "$value": "{palette.attention}"
+        },
+        "foreground": {
+          "$type": "color",
+          "$value": "{palette.attention-ink}"
+        }
+      },
+      "error": {
+        "background": {
+          "$type": "color",
+          "$value": "{palette.error}"
+        },
+        "foreground": {
+          "$type": "color",
+          "$value": "{palette.error-ink}"
+        }
+      },
+      "info": {
+        "background": {
+          "$type": "color",
+          "$value": "{palette.sky}"
+        },
+        "foreground": {
+          "$type": "color",
+          "$value": "{palette.ink}"
+        }
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": "Nunito Sans"
+      },
+      "body": {
+        "$type": "fontFamily",
+        "$value": "DM Sans"
+      },
+      "devanagari": {
+        "$type": "fontFamily",
+        "$value": "Mukta",
+        "$description": "Mukta is retained as a proposed Hindi/Marathi companion; validate translated layouts before release."
+      }
+    },
+    "weight": {
+      "regular": {
+        "$type": "fontWeight",
+        "$value": 400
+      },
+      "medium": {
+        "$type": "fontWeight",
+        "$value": 500
+      },
+      "semibold": {
+        "$type": "fontWeight",
+        "$value": 600
+      },
+      "bold": {
+        "$type": "fontWeight",
+        "$value": 700
+      },
+      "extra-bold": {
+        "$type": "fontWeight",
+        "$value": 800
+      }
+    },
+    "size": {
+      "label": {
+        "$type": "dimension",
+        "$value": {
+          "value": 13,
+          "unit": "px"
+        }
+      },
+      "small": {
+        "$type": "dimension",
+        "$value": {
+          "value": 15,
+          "unit": "px"
+        }
+      },
+      "body": {
+        "$type": "dimension",
+        "$value": {
+          "value": 17,
+          "unit": "px"
+        }
+      },
+      "large": {
+        "$type": "dimension",
+        "$value": {
+          "value": 19,
+          "unit": "px"
+        }
+      },
+      "parent": {
+        "$type": "dimension",
+        "$value": {
+          "value": 21,
+          "unit": "px"
+        }
+      },
+      "title": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        }
+      },
+      "heading-small": {
+        "$type": "dimension",
+        "$value": {
+          "value": 31,
+          "unit": "px"
+        }
+      },
+      "wordmark": {
+        "$type": "dimension",
+        "$value": {
+          "value": 34,
+          "unit": "px"
+        }
+      },
+      "heading": {
+        "$type": "dimension",
+        "$value": {
+          "value": 36,
+          "unit": "px"
+        }
+      },
+      "heading-large": {
+        "$type": "dimension",
+        "$value": {
+          "value": 42,
+          "unit": "px"
+        }
+      },
+      "display-small": {
+        "$type": "dimension",
+        "$value": {
+          "value": 46,
+          "unit": "px"
+        }
+      },
+      "display-large": {
+        "$type": "dimension",
+        "$value": {
+          "value": 78,
+          "unit": "px"
+        }
+      },
+      "button": {
+        "$type": "dimension",
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        }
+      }
+    },
+    "line-height": {
+      "wordmark": {
+        "$type": "number",
+        "$value": 1,
+        "$description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      },
+      "display": {
+        "$type": "number",
+        "$value": 1.08,
+        "$description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      },
+      "heading": {
+        "$type": "number",
+        "$value": 1.18,
+        "$description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      },
+      "title": {
+        "$type": "number",
+        "$value": 1.3,
+        "$description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      },
+      "control": {
+        "$type": "number",
+        "$value": 1.4,
+        "$description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      },
+      "body": {
+        "$type": "number",
+        "$value": 1.6,
+        "$description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      },
+      "reading": {
+        "$type": "number",
+        "$value": 1.65,
+        "$description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      }
+    },
+    "tracking": {
+      "normal": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "label": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1.3,
+          "unit": "px"
+        }
+      },
+      "title": {
+        "$type": "dimension",
+        "$value": {
+          "value": -0.4,
+          "unit": "px"
+        }
+      },
+      "heading": {
+        "$type": "dimension",
+        "$value": {
+          "value": -1.2,
+          "unit": "px"
+        }
+      },
+      "display-small": {
+        "$type": "dimension",
+        "$value": {
+          "value": -2.4,
+          "unit": "px"
+        }
+      },
+      "display-large": {
+        "$type": "dimension",
+        "$value": {
+          "value": -3.2,
+          "unit": "px"
+        }
+      },
+      "wordmark": {
+        "$type": "dimension",
+        "$value": {
+          "value": -1.7,
+          "unit": "px"
+        }
+      }
+    }
+  },
+  "typography": {
+    "display-large": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.display-large}",
+        "fontWeight": "{font.weight.bold}",
+        "letterSpacing": "{font.tracking.display-large}",
+        "lineHeight": "{font.line-height.display}"
+      }
+    },
+    "display-small": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.display-small}",
+        "fontWeight": "{font.weight.bold}",
+        "letterSpacing": "{font.tracking.display-small}",
+        "lineHeight": "{font.line-height.display}"
+      }
+    },
+    "heading-large": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.heading-large}",
+        "fontWeight": "{font.weight.bold}",
+        "letterSpacing": "{font.tracking.heading}",
+        "lineHeight": "{font.line-height.heading}"
+      }
+    },
+    "heading": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.heading}",
+        "fontWeight": "{font.weight.bold}",
+        "letterSpacing": "{font.tracking.heading}",
+        "lineHeight": "{font.line-height.heading}"
+      }
+    },
+    "heading-small": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.heading-small}",
+        "fontWeight": "{font.weight.bold}",
+        "letterSpacing": "{font.tracking.heading}",
+        "lineHeight": "{font.line-height.heading}"
+      }
+    },
+    "title": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.title}",
+        "fontWeight": "{font.weight.bold}",
+        "letterSpacing": "{font.tracking.title}",
+        "lineHeight": "{font.line-height.title}"
+      }
+    },
+    "body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.body}",
+        "fontWeight": "{font.weight.regular}",
+        "letterSpacing": "{font.tracking.normal}",
+        "lineHeight": "{font.line-height.body}"
+      }
+    },
+    "body-large": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.large}",
+        "fontWeight": "{font.weight.regular}",
+        "letterSpacing": "{font.tracking.normal}",
+        "lineHeight": "{font.line-height.reading}"
+      }
+    },
+    "body-parent": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.parent}",
+        "fontWeight": "{font.weight.regular}",
+        "letterSpacing": "{font.tracking.normal}",
+        "lineHeight": "{font.line-height.reading}"
+      }
+    },
+    "body-small": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.small}",
+        "fontWeight": "{font.weight.regular}",
+        "letterSpacing": "{font.tracking.normal}",
+        "lineHeight": "{font.line-height.body}"
+      }
+    },
+    "label": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.label}",
+        "fontWeight": "{font.weight.semibold}",
+        "letterSpacing": "{font.tracking.label}",
+        "lineHeight": "{font.line-height.body}"
+      }
+    },
+    "button": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.button}",
+        "fontWeight": "{font.weight.semibold}",
+        "letterSpacing": "{font.tracking.normal}",
+        "lineHeight": "{font.line-height.control}"
+      }
+    },
+    "wordmark": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.wordmark}",
+        "fontWeight": "{font.weight.extra-bold}",
+        "letterSpacing": "{font.tracking.wordmark}",
+        "lineHeight": "{font.line-height.wordmark}"
+      }
+    }
+  },
+  "space": {
+    "0": {
+      "$type": "dimension",
+      "$value": {
+        "value": 0,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "4": {
+      "$type": "dimension",
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": {
+        "value": 12,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "16": {
+      "$type": "dimension",
+      "$value": {
+        "value": 16,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "20": {
+      "$type": "dimension",
+      "$value": {
+        "value": 20,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "24": {
+      "$type": "dimension",
+      "$value": {
+        "value": 24,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "32": {
+      "$type": "dimension",
+      "$value": {
+        "value": 32,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "40": {
+      "$type": "dimension",
+      "$value": {
+        "value": 40,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "48": {
+      "$type": "dimension",
+      "$value": {
+        "value": 48,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "56": {
+      "$type": "dimension",
+      "$value": {
+        "value": 56,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "64": {
+      "$type": "dimension",
+      "$value": {
+        "value": 64,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "80": {
+      "$type": "dimension",
+      "$value": {
+        "value": 80,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "96": {
+      "$type": "dimension",
+      "$value": {
+        "value": 96,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "128": {
+      "$type": "dimension",
+      "$value": {
+        "value": 128,
+        "unit": "px"
+      },
+      "$description": "4 px spacing scale; token suffix is its pixel value."
+    }
+  },
+  "radius": {
+    "small": {
+      "$type": "dimension",
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      }
+    },
+    "control": {
+      "$type": "dimension",
+      "$value": {
+        "value": 12,
+        "unit": "px"
+      }
+    },
+    "card": {
+      "$type": "dimension",
+      "$value": {
+        "value": 18,
+        "unit": "px"
+      }
+    },
+    "panel": {
+      "$type": "dimension",
+      "$value": {
+        "value": 20,
+        "unit": "px"
+      }
+    },
+    "hero": {
+      "$type": "dimension",
+      "$value": {
+        "value": 26,
+        "unit": "px"
+      }
+    },
+    "sheet": {
+      "$type": "dimension",
+      "$value": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    "pill": {
+      "$type": "dimension",
+      "$value": {
+        "value": 9999,
+        "unit": "px"
+      }
+    }
+  },
+  "border": {
+    "hairline": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1,
+        "unit": "px"
+      }
+    },
+    "control": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1,
+        "unit": "px"
+      }
+    },
+    "focus": {
+      "$type": "dimension",
+      "$value": {
+        "value": 3,
+        "unit": "px"
+      }
+    },
+    "focus-offset": {
+      "$type": "dimension",
+      "$value": {
+        "value": 3,
+        "unit": "px"
+      }
+    },
+    "icon-stroke": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1.7,
+        "unit": "px"
+      }
+    }
+  },
+  "size": {
+    "icon": {
+      "inline": {
+        "$type": "dimension",
+        "$value": {
+          "value": 18,
+          "unit": "px"
+        }
+      },
+      "control": {
+        "$type": "dimension",
+        "$value": {
+          "value": 22,
+          "unit": "px"
+        }
+      },
+      "navigation": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        }
+      },
+      "large": {
+        "$type": "dimension",
+        "$value": {
+          "value": 32,
+          "unit": "px"
+        }
+      }
+    },
+    "touch": {
+      "minimum": {
+        "$type": "dimension",
+        "$value": {
+          "value": 48,
+          "unit": "px"
+        },
+        "$description": "Minimum interactive target size, independent of visible icon size."
+      },
+      "parent": {
+        "$type": "dimension",
+        "$value": {
+          "value": 56,
+          "unit": "px"
+        },
+        "$description": "Minimum interactive target size, independent of visible icon size."
+      }
+    },
+    "avatar": {
+      "small": {
+        "$type": "dimension",
+        "$value": {
+          "value": 32,
+          "unit": "px"
+        }
+      },
+      "medium": {
+        "$type": "dimension",
+        "$value": {
+          "value": 40,
+          "unit": "px"
+        }
+      },
+      "large": {
+        "$type": "dimension",
+        "$value": {
+          "value": 56,
+          "unit": "px"
+        }
+      }
+    },
+    "logo": {
+      "minimum": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        },
+        "$description": "Full-face logo width. Do not shrink below 24 px; create a simplified favicon separately."
+      },
+      "navigation": {
+        "$type": "dimension",
+        "$value": {
+          "value": 34,
+          "unit": "px"
+        },
+        "$description": "Full-face logo width. Do not shrink below 24 px; create a simplified favicon separately."
+      },
+      "loader": {
+        "$type": "dimension",
+        "$value": {
+          "value": 88,
+          "unit": "px"
+        },
+        "$description": "Full-face logo width. Do not shrink below 24 px; create a simplified favicon separately."
+      },
+      "hero": {
+        "$type": "dimension",
+        "$value": {
+          "value": 218,
+          "unit": "px"
+        },
+        "$description": "Full-face logo width. Do not shrink below 24 px; create a simplified favicon separately."
+      }
+    }
+  },
+  "layout": {
+    "content-wide": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1440,
+        "unit": "px"
+      }
+    },
+    "content": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1120,
+        "unit": "px"
+      }
+    },
+    "reading": {
+      "$type": "dimension",
+      "$value": {
+        "value": 720,
+        "unit": "px"
+      }
+    },
+    "breakpoint-mobile": {
+      "$type": "dimension",
+      "$value": {
+        "value": 720,
+        "unit": "px"
+      },
+      "$description": "Breakpoint values are documentation/build inputs; CSS var() cannot be used directly in media-query conditions."
+    },
+    "breakpoint-tablet": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1050,
+        "unit": "px"
+      },
+      "$description": "Breakpoint values are documentation/build inputs; CSS var() cannot be used directly in media-query conditions."
+    },
+    "breakpoint-wide": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1500,
+        "unit": "px"
+      },
+      "$description": "Breakpoint values are documentation/build inputs; CSS var() cannot be used directly in media-query conditions."
+    },
+    "gutter-mobile": {
+      "$type": "dimension",
+      "$value": "{space.24}"
+    },
+    "gutter-desktop": {
+      "$type": "dimension",
+      "$value": "{space.40}"
+    },
+    "section-mobile": {
+      "$type": "dimension",
+      "$value": "{space.40}"
+    },
+    "section-desktop": {
+      "$type": "dimension",
+      "$value": "{space.80}"
+    },
+    "card-padding": {
+      "$type": "dimension",
+      "$value": "{space.24}"
+    },
+    "card-gap": {
+      "$type": "dimension",
+      "$value": "{space.16}"
+    }
+  },
+  "motion": {
+    "duration": {
+      "instant": {
+        "$type": "duration",
+        "$value": {
+          "value": 90,
+          "unit": "ms"
+        }
+      },
+      "fast": {
+        "$type": "duration",
+        "$value": {
+          "value": 140,
+          "unit": "ms"
+        }
+      },
+      "base": {
+        "$type": "duration",
+        "$value": {
+          "value": 220,
+          "unit": "ms"
+        }
+      },
+      "slow": {
+        "$type": "duration",
+        "$value": {
+          "value": 340,
+          "unit": "ms"
+        }
+      },
+      "sheet": {
+        "$type": "duration",
+        "$value": {
+          "value": 420,
+          "unit": "ms"
+        }
+      },
+      "loader": {
+        "$type": "duration",
+        "$value": {
+          "value": 3600,
+          "unit": "ms"
+        },
+        "$description": "A motion cycle, not a network timeout. Stop when the actual operation finishes."
+      },
+      "blink": {
+        "$type": "duration",
+        "$value": {
+          "value": 5400,
+          "unit": "ms"
+        },
+        "$description": "A motion cycle, not a network timeout. Stop when the actual operation finishes."
+      },
+      "reduced": {
+        "$type": "duration",
+        "$value": {
+          "value": 1,
+          "unit": "ms"
+        }
+      }
+    },
+    "easing": {
+      "out": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.22,
+          0.61,
+          0.36,
+          1
+        ]
+      },
+      "in-out": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.42,
+          0,
+          0.58,
+          1
+        ]
+      },
+      "entrance": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.16,
+          0.84,
+          0.44,
+          1
+        ]
+      }
+    },
+    "loader": {
+      "rotate-start": {
+        "$type": "number",
+        "$value": -5,
+        "$description": "Degrees. CSS applies calc(var(...) * 1deg)."
+      },
+      "rotate-end": {
+        "$type": "number",
+        "$value": 4,
+        "$description": "Degrees. CSS applies calc(var(...) * 1deg)."
+      },
+      "rise": {
+        "$type": "dimension",
+        "$value": {
+          "value": -3,
+          "unit": "px"
+        }
+      },
+      "blink-scale": {
+        "$type": "number",
+        "$value": 0.1
+      }
+    }
+  },
+  "opacity": {
+    "disabled": {
+      "$type": "number",
+      "$value": 0.48,
+      "$description": "Never apply reduced opacity to required explanatory text."
+    },
+    "decorative-shadow": {
+      "$type": "number",
+      "$value": 0.07,
+      "$description": "Never apply reduced opacity to required explanatory text."
+    }
+  },
+  "layer": {
+    "base": {
+      "$type": "number",
+      "$value": 0
+    },
+    "sticky": {
+      "$type": "number",
+      "$value": 10
+    },
+    "dropdown": {
+      "$type": "number",
+      "$value": 20
+    },
+    "scrim": {
+      "$type": "number",
+      "$value": 40
+    },
+    "dialog": {
+      "$type": "number",
+      "$value": 50
+    },
+    "toast": {
+      "$type": "number",
+      "$value": 60
+    }
+  },
+  "shadow": {
+    "none": {
+      "$type": "shadow",
+      "$value": {
+        "color": "{palette.shadow}",
+        "offsetX": {
+          "value": 0,
+          "unit": "px"
+        },
+        "offsetY": {
+          "value": 0,
+          "unit": "px"
+        },
+        "blur": {
+          "value": 0,
+          "unit": "px"
+        },
+        "spread": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "$description": "Most cards have no shadow. Use elevation only to show a floating layer; presentation is for device mockups."
+    },
+    "raised": {
+      "$type": "shadow",
+      "$value": {
+        "color": "{palette.shadow}",
+        "offsetX": {
+          "value": 0,
+          "unit": "px"
+        },
+        "offsetY": {
+          "value": 16,
+          "unit": "px"
+        },
+        "blur": {
+          "value": 40,
+          "unit": "px"
+        },
+        "spread": {
+          "value": -20,
+          "unit": "px"
+        }
+      },
+      "$description": "Most cards have no shadow. Use elevation only to show a floating layer; presentation is for device mockups."
+    },
+    "sheet": {
+      "$type": "shadow",
+      "$value": {
+        "color": "{palette.shadow}",
+        "offsetX": {
+          "value": 0,
+          "unit": "px"
+        },
+        "offsetY": {
+          "value": -10,
+          "unit": "px"
+        },
+        "blur": {
+          "value": 52,
+          "unit": "px"
+        },
+        "spread": {
+          "value": -20,
+          "unit": "px"
+        }
+      },
+      "$description": "Most cards have no shadow. Use elevation only to show a floating layer; presentation is for device mockups."
+    },
+    "presentation": {
+      "$type": "shadow",
+      "$value": {
+        "color": "{palette.phone-shadow}",
+        "offsetX": {
+          "value": 0,
+          "unit": "px"
+        },
+        "offsetY": {
+          "value": 22,
+          "unit": "px"
+        },
+        "blur": {
+          "value": 45,
+          "unit": "px"
+        },
+        "spread": {
+          "value": -30,
+          "unit": "px"
+        }
+      },
+      "$description": "Most cards have no shadow. Use elevation only to show a floating layer; presentation is for device mockups."
+    }
+  },
+  "component": {
+    "button": {
+      "background": {
+        "$type": "color",
+        "$value": "{color.action.primary}"
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{color.action.hover}"
+      },
+      "pressed": {
+        "$type": "color",
+        "$value": "{color.action.pressed}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.action.on-primary}"
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{radius.control}"
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": "{size.touch.minimum}"
+      },
+      "parent-height": {
+        "$type": "dimension",
+        "$value": "{size.touch.parent}"
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "{space.24}"
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{space.8}"
+      },
+      "type": {
+        "$type": "typography",
+        "$value": "{typography.button}"
+      }
+    },
+    "card": {
+      "background": {
+        "$type": "color",
+        "$value": "{color.surface.card}"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.border.subtle}"
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{radius.card}"
+      },
+      "padding": {
+        "$type": "dimension",
+        "$value": "{space.24}"
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "{space.16}"
+      },
+      "shadow": {
+        "$type": "shadow",
+        "$value": "{shadow.none}"
+      }
+    },
+    "input": {
+      "background": {
+        "$type": "color",
+        "$value": "{color.surface.card}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.text.primary}"
+      },
+      "placeholder": {
+        "$type": "color",
+        "$value": "{color.text.secondary}"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{color.border.control}"
+      },
+      "focus-border": {
+        "$type": "color",
+        "$value": "{color.border.focus}"
+      },
+      "error-border": {
+        "$type": "color",
+        "$value": "{color.status.error.foreground}"
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{radius.control}"
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": "{size.touch.minimum}"
+      },
+      "parent-height": {
+        "$type": "dimension",
+        "$value": "{size.touch.parent}"
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "{space.16}"
+      },
+      "type": {
+        "$type": "typography",
+        "$value": "{typography.body}"
+      }
+    },
+    "chip": {
+      "background": {
+        "$type": "color",
+        "$value": "{color.status.success.background}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.status.success.foreground}"
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{radius.pill}"
+      },
+      "padding-inline": {
+        "$type": "dimension",
+        "$value": "{space.12}"
+      },
+      "padding-block": {
+        "$type": "dimension",
+        "$value": "{space.4}"
+      }
+    },
+    "welcome": {
+      "background": {
+        "$type": "color",
+        "$value": "{color.surface.welcome}"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.text.primary}"
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{radius.hero}"
+      },
+      "padding": {
+        "$type": "dimension",
+        "$value": "{space.24}"
+      }
+    },
+    "focus": {
+      "color": {
+        "$type": "color",
+        "$value": "{color.border.focus}"
+      },
+      "width": {
+        "$type": "dimension",
+        "$value": "{border.focus}"
+      },
+      "offset": {
+        "$type": "dimension",
+        "$value": "{border.focus-offset}"
+      }
+    },
+    "loader": {
+      "body": {
+        "$type": "color",
+        "$value": "{color.brand.character}"
+      },
+      "face": {
+        "$type": "color",
+        "$value": "{color.brand.face}"
+      },
+      "size": {
+        "$type": "dimension",
+        "$value": "{size.logo.loader}"
+      },
+      "duration": {
+        "$type": "duration",
+        "$value": "{motion.duration.loader}"
+      },
+      "blink-duration": {
+        "$type": "duration",
+        "$value": "{motion.duration.blink}"
+      },
+      "easing": {
+        "$type": "cubicBezier",
+        "$value": "{motion.easing.in-out}"
+      }
+    },
+    "dialog": {
+      "background": {
+        "$type": "color",
+        "$value": "{color.surface.card}"
+      },
+      "scrim": {
+        "$type": "color",
+        "$value": "{color.surface.scrim}"
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{radius.sheet}"
+      },
+      "padding": {
+        "$type": "dimension",
+        "$value": "{space.32}"
+      },
+      "shadow": {
+        "$type": "shadow",
+        "$value": "{shadow.raised}"
+      }
+    }
+  }
+}

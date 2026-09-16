@@ -1,0 +1,25 @@
+/* Optional Little b motion. Load boring.css before this file.
+   Apply boring-loader to the outer SVG, and boring-loader-eyes to its eye group.
+   Remove boring-loader when the real operation completes. */
+.boring-loader {
+  --boring-eye-animation: boring-blink var(--boring-component-loader-blink-duration) var(--boring-component-loader-easing) infinite;
+  transform-origin: 50% 85%;
+  animation: boring-settle var(--boring-component-loader-duration) var(--boring-component-loader-easing) infinite;
+}
+.boring-loader-eyes {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: var(--boring-eye-animation, none);
+}
+@keyframes boring-settle {
+  0%,100% { transform: rotate(calc(var(--boring-motion-loader-rotate-start) * 1deg)) translateY(0); }
+  50% { transform: rotate(calc(var(--boring-motion-loader-rotate-end) * 1deg)) translateY(var(--boring-motion-loader-rise)); }
+}
+@keyframes boring-blink {
+  0%,44%,50%,100% { transform: scaleY(1); }
+  46%,48% { transform: scaleY(var(--boring-motion-loader-blink-scale)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .boring-loader { --boring-eye-animation: none; animation: none; }
+  .boring-loader-eyes { animation: none; }
+}

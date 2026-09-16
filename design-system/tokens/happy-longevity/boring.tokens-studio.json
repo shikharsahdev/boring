@@ -1,0 +1,1188 @@
+{
+  "palette": {
+    "paper": {
+      "type": "color",
+      "value": "#FFFBF2",
+      "description": "Approved exploration colour."
+    },
+    "card": {
+      "type": "color",
+      "value": "#FFFEFA",
+      "description": "Approved exploration colour."
+    },
+    "ink": {
+      "type": "color",
+      "value": "#294968",
+      "description": "Approved exploration colour."
+    },
+    "ink-hover": {
+      "type": "color",
+      "value": "#203C56",
+      "description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "ink-pressed": {
+      "type": "color",
+      "value": "#183047",
+      "description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "muted": {
+      "type": "color",
+      "value": "#596978",
+      "description": "Approved exploration colour."
+    },
+    "butter": {
+      "type": "color",
+      "value": "#F2CA66",
+      "description": "Approved exploration colour."
+    },
+    "sky": {
+      "type": "color",
+      "value": "#E0EDF4",
+      "description": "Approved exploration colour."
+    },
+    "wash": {
+      "type": "color",
+      "value": "#F7EFD9",
+      "description": "Approved exploration colour."
+    },
+    "line": {
+      "type": "color",
+      "value": "#DDDEDA",
+      "description": "Approved exploration colour."
+    },
+    "line-strong": {
+      "type": "color",
+      "value": "#7B8790",
+      "description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "sage": {
+      "type": "color",
+      "value": "#E4EDDD",
+      "description": "Approved exploration colour."
+    },
+    "sage-ink": {
+      "type": "color",
+      "value": "#3E5C3B",
+      "description": "Approved exploration colour."
+    },
+    "attention": {
+      "type": "color",
+      "value": "#F8ECD4",
+      "description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "attention-ink": {
+      "type": "color",
+      "value": "#795214",
+      "description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "error": {
+      "type": "color",
+      "value": "#F9E7E2",
+      "description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "error-ink": {
+      "type": "color",
+      "value": "#943B32",
+      "description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "disabled": {
+      "type": "color",
+      "value": "#E7E7E0",
+      "description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "disabled-ink": {
+      "type": "color",
+      "value": "#63707B",
+      "description": "Supporting interaction or feedback colour; extension of the approved direction."
+    },
+    "shadow": {
+      "type": "color",
+      "value": "rgba(41, 73, 104, 0.16)",
+      "description": "Tinted low-opacity shadow. Use only on floating surfaces."
+    },
+    "scrim": {
+      "type": "color",
+      "value": "rgba(41, 73, 104, 0.28)",
+      "description": "Modal backdrop; never use as a text colour."
+    },
+    "phone-shadow": {
+      "type": "color",
+      "value": "rgba(41, 73, 104, 0.33333333)",
+      "description": "Presentation-only phone elevation from the approved exploration."
+    }
+  },
+  "color": {
+    "surface": {
+      "page": {
+        "type": "color",
+        "value": "{palette.paper}"
+      },
+      "card": {
+        "type": "color",
+        "value": "{palette.card}"
+      },
+      "welcome": {
+        "type": "color",
+        "value": "{palette.sky}"
+      },
+      "warm": {
+        "type": "color",
+        "value": "{palette.wash}"
+      },
+      "disabled": {
+        "type": "color",
+        "value": "{palette.disabled}"
+      },
+      "inverse": {
+        "type": "color",
+        "value": "{palette.ink}"
+      },
+      "scrim": {
+        "type": "color",
+        "value": "{palette.scrim}"
+      }
+    },
+    "text": {
+      "primary": {
+        "type": "color",
+        "value": "{palette.ink}"
+      },
+      "secondary": {
+        "type": "color",
+        "value": "{palette.muted}"
+      },
+      "inverse": {
+        "type": "color",
+        "value": "{palette.paper}"
+      },
+      "disabled": {
+        "type": "color",
+        "value": "{palette.disabled-ink}"
+      },
+      "link": {
+        "type": "color",
+        "value": "{palette.ink}"
+      }
+    },
+    "brand": {
+      "character": {
+        "type": "color",
+        "value": "{palette.butter}"
+      },
+      "face": {
+        "type": "color",
+        "value": "{palette.ink}"
+      }
+    },
+    "border": {
+      "subtle": {
+        "type": "color",
+        "value": "{palette.line}"
+      },
+      "control": {
+        "type": "color",
+        "value": "{palette.line-strong}"
+      },
+      "focus": {
+        "type": "color",
+        "value": "{palette.ink}"
+      }
+    },
+    "action": {
+      "primary": {
+        "type": "color",
+        "value": "{palette.ink}"
+      },
+      "hover": {
+        "type": "color",
+        "value": "{palette.ink-hover}"
+      },
+      "pressed": {
+        "type": "color",
+        "value": "{palette.ink-pressed}"
+      },
+      "on-primary": {
+        "type": "color",
+        "value": "{palette.paper}"
+      },
+      "secondary": {
+        "type": "color",
+        "value": "{palette.card}"
+      },
+      "secondary-hover": {
+        "type": "color",
+        "value": "{palette.sky}"
+      }
+    },
+    "status": {
+      "success": {
+        "background": {
+          "type": "color",
+          "value": "{palette.sage}"
+        },
+        "foreground": {
+          "type": "color",
+          "value": "{palette.sage-ink}"
+        }
+      },
+      "attention": {
+        "background": {
+          "type": "color",
+          "value": "{palette.attention}"
+        },
+        "foreground": {
+          "type": "color",
+          "value": "{palette.attention-ink}"
+        }
+      },
+      "error": {
+        "background": {
+          "type": "color",
+          "value": "{palette.error}"
+        },
+        "foreground": {
+          "type": "color",
+          "value": "{palette.error-ink}"
+        }
+      },
+      "info": {
+        "background": {
+          "type": "color",
+          "value": "{palette.sky}"
+        },
+        "foreground": {
+          "type": "color",
+          "value": "{palette.ink}"
+        }
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "display": {
+        "type": "fontFamilies",
+        "value": "Nunito Sans"
+      },
+      "body": {
+        "type": "fontFamilies",
+        "value": "DM Sans"
+      },
+      "devanagari": {
+        "type": "fontFamilies",
+        "value": "Mukta",
+        "description": "Mukta is retained as a proposed Hindi/Marathi companion; validate translated layouts before release."
+      }
+    },
+    "weight": {
+      "regular": {
+        "type": "fontWeights",
+        "value": 400
+      },
+      "medium": {
+        "type": "fontWeights",
+        "value": 500
+      },
+      "semibold": {
+        "type": "fontWeights",
+        "value": 600
+      },
+      "bold": {
+        "type": "fontWeights",
+        "value": 700
+      },
+      "extra-bold": {
+        "type": "fontWeights",
+        "value": 800
+      }
+    },
+    "size": {
+      "label": {
+        "type": "fontSizes",
+        "value": "13px"
+      },
+      "small": {
+        "type": "fontSizes",
+        "value": "15px"
+      },
+      "body": {
+        "type": "fontSizes",
+        "value": "17px"
+      },
+      "large": {
+        "type": "fontSizes",
+        "value": "19px"
+      },
+      "parent": {
+        "type": "fontSizes",
+        "value": "21px"
+      },
+      "title": {
+        "type": "fontSizes",
+        "value": "24px"
+      },
+      "heading-small": {
+        "type": "fontSizes",
+        "value": "31px"
+      },
+      "wordmark": {
+        "type": "fontSizes",
+        "value": "34px"
+      },
+      "heading": {
+        "type": "fontSizes",
+        "value": "36px"
+      },
+      "heading-large": {
+        "type": "fontSizes",
+        "value": "42px"
+      },
+      "display-small": {
+        "type": "fontSizes",
+        "value": "46px"
+      },
+      "display-large": {
+        "type": "fontSizes",
+        "value": "78px"
+      },
+      "button": {
+        "type": "fontSizes",
+        "value": "16px"
+      }
+    },
+    "line-height": {
+      "wordmark": {
+        "type": "lineHeights",
+        "value": "100%",
+        "description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      },
+      "display": {
+        "type": "lineHeights",
+        "value": "108%",
+        "description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      },
+      "heading": {
+        "type": "lineHeights",
+        "value": "118%",
+        "description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      },
+      "title": {
+        "type": "lineHeights",
+        "value": "130%",
+        "description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      },
+      "control": {
+        "type": "lineHeights",
+        "value": "140%",
+        "description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      },
+      "body": {
+        "type": "lineHeights",
+        "value": "160%",
+        "description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      },
+      "reading": {
+        "type": "lineHeights",
+        "value": "165%",
+        "description": "Unitless multiplier; converted to a percentage in Tokens Studio."
+      }
+    },
+    "tracking": {
+      "normal": {
+        "type": "letterSpacing",
+        "value": "0px"
+      },
+      "label": {
+        "type": "letterSpacing",
+        "value": "1.3px"
+      },
+      "title": {
+        "type": "letterSpacing",
+        "value": "-0.4px"
+      },
+      "heading": {
+        "type": "letterSpacing",
+        "value": "-1.2px"
+      },
+      "display-small": {
+        "type": "letterSpacing",
+        "value": "-2.4px"
+      },
+      "display-large": {
+        "type": "letterSpacing",
+        "value": "-3.2px"
+      },
+      "wordmark": {
+        "type": "letterSpacing",
+        "value": "-1.7px"
+      }
+    }
+  },
+  "typography": {
+    "display-large": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.display-large}",
+        "fontWeight": "{font.weight.bold}",
+        "letterSpacing": "{font.tracking.display-large}",
+        "lineHeight": "{font.line-height.display}"
+      }
+    },
+    "display-small": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.display-small}",
+        "fontWeight": "{font.weight.bold}",
+        "letterSpacing": "{font.tracking.display-small}",
+        "lineHeight": "{font.line-height.display}"
+      }
+    },
+    "heading-large": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.heading-large}",
+        "fontWeight": "{font.weight.bold}",
+        "letterSpacing": "{font.tracking.heading}",
+        "lineHeight": "{font.line-height.heading}"
+      }
+    },
+    "heading": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.heading}",
+        "fontWeight": "{font.weight.bold}",
+        "letterSpacing": "{font.tracking.heading}",
+        "lineHeight": "{font.line-height.heading}"
+      }
+    },
+    "heading-small": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.heading-small}",
+        "fontWeight": "{font.weight.bold}",
+        "letterSpacing": "{font.tracking.heading}",
+        "lineHeight": "{font.line-height.heading}"
+      }
+    },
+    "title": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.title}",
+        "fontWeight": "{font.weight.bold}",
+        "letterSpacing": "{font.tracking.title}",
+        "lineHeight": "{font.line-height.title}"
+      }
+    },
+    "body": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.body}",
+        "fontWeight": "{font.weight.regular}",
+        "letterSpacing": "{font.tracking.normal}",
+        "lineHeight": "{font.line-height.body}"
+      }
+    },
+    "body-large": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.large}",
+        "fontWeight": "{font.weight.regular}",
+        "letterSpacing": "{font.tracking.normal}",
+        "lineHeight": "{font.line-height.reading}"
+      }
+    },
+    "body-parent": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.parent}",
+        "fontWeight": "{font.weight.regular}",
+        "letterSpacing": "{font.tracking.normal}",
+        "lineHeight": "{font.line-height.reading}"
+      }
+    },
+    "body-small": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.small}",
+        "fontWeight": "{font.weight.regular}",
+        "letterSpacing": "{font.tracking.normal}",
+        "lineHeight": "{font.line-height.body}"
+      }
+    },
+    "label": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.label}",
+        "fontWeight": "{font.weight.semibold}",
+        "letterSpacing": "{font.tracking.label}",
+        "lineHeight": "{font.line-height.body}"
+      }
+    },
+    "button": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "{font.size.button}",
+        "fontWeight": "{font.weight.semibold}",
+        "letterSpacing": "{font.tracking.normal}",
+        "lineHeight": "{font.line-height.control}"
+      }
+    },
+    "wordmark": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "{font.size.wordmark}",
+        "fontWeight": "{font.weight.extra-bold}",
+        "letterSpacing": "{font.tracking.wordmark}",
+        "lineHeight": "{font.line-height.wordmark}"
+      }
+    }
+  },
+  "space": {
+    "0": {
+      "type": "dimension",
+      "value": "0px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "4": {
+      "type": "dimension",
+      "value": "4px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "8": {
+      "type": "dimension",
+      "value": "8px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "12": {
+      "type": "dimension",
+      "value": "12px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "16": {
+      "type": "dimension",
+      "value": "16px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "20": {
+      "type": "dimension",
+      "value": "20px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "24": {
+      "type": "dimension",
+      "value": "24px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "32": {
+      "type": "dimension",
+      "value": "32px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "40": {
+      "type": "dimension",
+      "value": "40px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "48": {
+      "type": "dimension",
+      "value": "48px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "56": {
+      "type": "dimension",
+      "value": "56px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "64": {
+      "type": "dimension",
+      "value": "64px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "80": {
+      "type": "dimension",
+      "value": "80px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "96": {
+      "type": "dimension",
+      "value": "96px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    },
+    "128": {
+      "type": "dimension",
+      "value": "128px",
+      "description": "4 px spacing scale; token suffix is its pixel value."
+    }
+  },
+  "radius": {
+    "small": {
+      "type": "dimension",
+      "value": "8px"
+    },
+    "control": {
+      "type": "dimension",
+      "value": "12px"
+    },
+    "card": {
+      "type": "dimension",
+      "value": "18px"
+    },
+    "panel": {
+      "type": "dimension",
+      "value": "20px"
+    },
+    "hero": {
+      "type": "dimension",
+      "value": "26px"
+    },
+    "sheet": {
+      "type": "dimension",
+      "value": "32px"
+    },
+    "pill": {
+      "type": "dimension",
+      "value": "9999px"
+    }
+  },
+  "border": {
+    "hairline": {
+      "type": "dimension",
+      "value": "1px"
+    },
+    "control": {
+      "type": "dimension",
+      "value": "1px"
+    },
+    "focus": {
+      "type": "dimension",
+      "value": "3px"
+    },
+    "focus-offset": {
+      "type": "dimension",
+      "value": "3px"
+    },
+    "icon-stroke": {
+      "type": "dimension",
+      "value": "1.7px"
+    }
+  },
+  "size": {
+    "icon": {
+      "inline": {
+        "type": "dimension",
+        "value": "18px"
+      },
+      "control": {
+        "type": "dimension",
+        "value": "22px"
+      },
+      "navigation": {
+        "type": "dimension",
+        "value": "24px"
+      },
+      "large": {
+        "type": "dimension",
+        "value": "32px"
+      }
+    },
+    "touch": {
+      "minimum": {
+        "type": "dimension",
+        "value": "48px",
+        "description": "Minimum interactive target size, independent of visible icon size."
+      },
+      "parent": {
+        "type": "dimension",
+        "value": "56px",
+        "description": "Minimum interactive target size, independent of visible icon size."
+      }
+    },
+    "avatar": {
+      "small": {
+        "type": "dimension",
+        "value": "32px"
+      },
+      "medium": {
+        "type": "dimension",
+        "value": "40px"
+      },
+      "large": {
+        "type": "dimension",
+        "value": "56px"
+      }
+    },
+    "logo": {
+      "minimum": {
+        "type": "dimension",
+        "value": "24px",
+        "description": "Full-face logo width. Do not shrink below 24 px; create a simplified favicon separately."
+      },
+      "navigation": {
+        "type": "dimension",
+        "value": "34px",
+        "description": "Full-face logo width. Do not shrink below 24 px; create a simplified favicon separately."
+      },
+      "loader": {
+        "type": "dimension",
+        "value": "88px",
+        "description": "Full-face logo width. Do not shrink below 24 px; create a simplified favicon separately."
+      },
+      "hero": {
+        "type": "dimension",
+        "value": "218px",
+        "description": "Full-face logo width. Do not shrink below 24 px; create a simplified favicon separately."
+      }
+    }
+  },
+  "layout": {
+    "content-wide": {
+      "type": "dimension",
+      "value": "1440px"
+    },
+    "content": {
+      "type": "dimension",
+      "value": "1120px"
+    },
+    "reading": {
+      "type": "dimension",
+      "value": "720px"
+    },
+    "breakpoint-mobile": {
+      "type": "dimension",
+      "value": "720px",
+      "description": "Breakpoint values are documentation/build inputs; CSS var() cannot be used directly in media-query conditions."
+    },
+    "breakpoint-tablet": {
+      "type": "dimension",
+      "value": "1050px",
+      "description": "Breakpoint values are documentation/build inputs; CSS var() cannot be used directly in media-query conditions."
+    },
+    "breakpoint-wide": {
+      "type": "dimension",
+      "value": "1500px",
+      "description": "Breakpoint values are documentation/build inputs; CSS var() cannot be used directly in media-query conditions."
+    },
+    "gutter-mobile": {
+      "type": "dimension",
+      "value": "{space.24}"
+    },
+    "gutter-desktop": {
+      "type": "dimension",
+      "value": "{space.40}"
+    },
+    "section-mobile": {
+      "type": "dimension",
+      "value": "{space.40}"
+    },
+    "section-desktop": {
+      "type": "dimension",
+      "value": "{space.80}"
+    },
+    "card-padding": {
+      "type": "dimension",
+      "value": "{space.24}"
+    },
+    "card-gap": {
+      "type": "dimension",
+      "value": "{space.16}"
+    }
+  },
+  "motion": {
+    "duration": {
+      "instant": {
+        "type": "other",
+        "value": "90ms"
+      },
+      "fast": {
+        "type": "other",
+        "value": "140ms"
+      },
+      "base": {
+        "type": "other",
+        "value": "220ms"
+      },
+      "slow": {
+        "type": "other",
+        "value": "340ms"
+      },
+      "sheet": {
+        "type": "other",
+        "value": "420ms"
+      },
+      "loader": {
+        "type": "other",
+        "value": "3600ms",
+        "description": "A motion cycle, not a network timeout. Stop when the actual operation finishes."
+      },
+      "blink": {
+        "type": "other",
+        "value": "5400ms",
+        "description": "A motion cycle, not a network timeout. Stop when the actual operation finishes."
+      },
+      "reduced": {
+        "type": "other",
+        "value": "1ms"
+      }
+    },
+    "easing": {
+      "out": {
+        "type": "other",
+        "value": "cubic-bezier(0.22, 0.61, 0.36, 1)"
+      },
+      "in-out": {
+        "type": "other",
+        "value": "cubic-bezier(0.42, 0, 0.58, 1)"
+      },
+      "entrance": {
+        "type": "other",
+        "value": "cubic-bezier(0.16, 0.84, 0.44, 1)"
+      }
+    },
+    "loader": {
+      "rotate-start": {
+        "type": "number",
+        "value": -5,
+        "description": "Degrees. CSS applies calc(var(...) * 1deg)."
+      },
+      "rotate-end": {
+        "type": "number",
+        "value": 4,
+        "description": "Degrees. CSS applies calc(var(...) * 1deg)."
+      },
+      "rise": {
+        "type": "dimension",
+        "value": "-3px"
+      },
+      "blink-scale": {
+        "type": "number",
+        "value": 0.1
+      }
+    }
+  },
+  "opacity": {
+    "disabled": {
+      "type": "number",
+      "value": 0.48,
+      "description": "Never apply reduced opacity to required explanatory text."
+    },
+    "decorative-shadow": {
+      "type": "number",
+      "value": 0.07,
+      "description": "Never apply reduced opacity to required explanatory text."
+    }
+  },
+  "layer": {
+    "base": {
+      "type": "number",
+      "value": 0
+    },
+    "sticky": {
+      "type": "number",
+      "value": 10
+    },
+    "dropdown": {
+      "type": "number",
+      "value": 20
+    },
+    "scrim": {
+      "type": "number",
+      "value": 40
+    },
+    "dialog": {
+      "type": "number",
+      "value": 50
+    },
+    "toast": {
+      "type": "number",
+      "value": 60
+    }
+  },
+  "shadow": {
+    "none": {
+      "type": "boxShadow",
+      "value": [
+        {
+          "x": "0px",
+          "y": "0px",
+          "blur": "0px",
+          "spread": "0px",
+          "color": "{palette.shadow}",
+          "type": "dropShadow"
+        }
+      ],
+      "description": "Most cards have no shadow. Use elevation only to show a floating layer; presentation is for device mockups."
+    },
+    "raised": {
+      "type": "boxShadow",
+      "value": [
+        {
+          "x": "0px",
+          "y": "16px",
+          "blur": "40px",
+          "spread": "-20px",
+          "color": "{palette.shadow}",
+          "type": "dropShadow"
+        }
+      ],
+      "description": "Most cards have no shadow. Use elevation only to show a floating layer; presentation is for device mockups."
+    },
+    "sheet": {
+      "type": "boxShadow",
+      "value": [
+        {
+          "x": "0px",
+          "y": "-10px",
+          "blur": "52px",
+          "spread": "-20px",
+          "color": "{palette.shadow}",
+          "type": "dropShadow"
+        }
+      ],
+      "description": "Most cards have no shadow. Use elevation only to show a floating layer; presentation is for device mockups."
+    },
+    "presentation": {
+      "type": "boxShadow",
+      "value": [
+        {
+          "x": "0px",
+          "y": "22px",
+          "blur": "45px",
+          "spread": "-30px",
+          "color": "{palette.phone-shadow}",
+          "type": "dropShadow"
+        }
+      ],
+      "description": "Most cards have no shadow. Use elevation only to show a floating layer; presentation is for device mockups."
+    }
+  },
+  "component": {
+    "button": {
+      "background": {
+        "type": "color",
+        "value": "{color.action.primary}"
+      },
+      "hover": {
+        "type": "color",
+        "value": "{color.action.hover}"
+      },
+      "pressed": {
+        "type": "color",
+        "value": "{color.action.pressed}"
+      },
+      "text": {
+        "type": "color",
+        "value": "{color.action.on-primary}"
+      },
+      "radius": {
+        "type": "dimension",
+        "value": "{radius.control}"
+      },
+      "height": {
+        "type": "dimension",
+        "value": "{size.touch.minimum}"
+      },
+      "parent-height": {
+        "type": "dimension",
+        "value": "{size.touch.parent}"
+      },
+      "padding-inline": {
+        "type": "dimension",
+        "value": "{space.24}"
+      },
+      "gap": {
+        "type": "dimension",
+        "value": "{space.8}"
+      },
+      "type": {
+        "type": "typography",
+        "value": "{typography.button}"
+      }
+    },
+    "card": {
+      "background": {
+        "type": "color",
+        "value": "{color.surface.card}"
+      },
+      "border": {
+        "type": "color",
+        "value": "{color.border.subtle}"
+      },
+      "radius": {
+        "type": "dimension",
+        "value": "{radius.card}"
+      },
+      "padding": {
+        "type": "dimension",
+        "value": "{space.24}"
+      },
+      "gap": {
+        "type": "dimension",
+        "value": "{space.16}"
+      },
+      "shadow": {
+        "type": "boxShadow",
+        "value": "{shadow.none}"
+      }
+    },
+    "input": {
+      "background": {
+        "type": "color",
+        "value": "{color.surface.card}"
+      },
+      "text": {
+        "type": "color",
+        "value": "{color.text.primary}"
+      },
+      "placeholder": {
+        "type": "color",
+        "value": "{color.text.secondary}"
+      },
+      "border": {
+        "type": "color",
+        "value": "{color.border.control}"
+      },
+      "focus-border": {
+        "type": "color",
+        "value": "{color.border.focus}"
+      },
+      "error-border": {
+        "type": "color",
+        "value": "{color.status.error.foreground}"
+      },
+      "radius": {
+        "type": "dimension",
+        "value": "{radius.control}"
+      },
+      "height": {
+        "type": "dimension",
+        "value": "{size.touch.minimum}"
+      },
+      "parent-height": {
+        "type": "dimension",
+        "value": "{size.touch.parent}"
+      },
+      "padding-inline": {
+        "type": "dimension",
+        "value": "{space.16}"
+      },
+      "type": {
+        "type": "typography",
+        "value": "{typography.body}"
+      }
+    },
+    "chip": {
+      "background": {
+        "type": "color",
+        "value": "{color.status.success.background}"
+      },
+      "text": {
+        "type": "color",
+        "value": "{color.status.success.foreground}"
+      },
+      "radius": {
+        "type": "dimension",
+        "value": "{radius.pill}"
+      },
+      "padding-inline": {
+        "type": "dimension",
+        "value": "{space.12}"
+      },
+      "padding-block": {
+        "type": "dimension",
+        "value": "{space.4}"
+      }
+    },
+    "welcome": {
+      "background": {
+        "type": "color",
+        "value": "{color.surface.welcome}"
+      },
+      "text": {
+        "type": "color",
+        "value": "{color.text.primary}"
+      },
+      "radius": {
+        "type": "dimension",
+        "value": "{radius.hero}"
+      },
+      "padding": {
+        "type": "dimension",
+        "value": "{space.24}"
+      }
+    },
+    "focus": {
+      "color": {
+        "type": "color",
+        "value": "{color.border.focus}"
+      },
+      "width": {
+        "type": "dimension",
+        "value": "{border.focus}"
+      },
+      "offset": {
+        "type": "dimension",
+        "value": "{border.focus-offset}"
+      }
+    },
+    "loader": {
+      "body": {
+        "type": "color",
+        "value": "{color.brand.character}"
+      },
+      "face": {
+        "type": "color",
+        "value": "{color.brand.face}"
+      },
+      "size": {
+        "type": "dimension",
+        "value": "{size.logo.loader}"
+      },
+      "duration": {
+        "type": "other",
+        "value": "{motion.duration.loader}"
+      },
+      "blink-duration": {
+        "type": "other",
+        "value": "{motion.duration.blink}"
+      },
+      "easing": {
+        "type": "other",
+        "value": "{motion.easing.in-out}"
+      }
+    },
+    "dialog": {
+      "background": {
+        "type": "color",
+        "value": "{color.surface.card}"
+      },
+      "scrim": {
+        "type": "color",
+        "value": "{color.surface.scrim}"
+      },
+      "radius": {
+        "type": "dimension",
+        "value": "{radius.sheet}"
+      },
+      "padding": {
+        "type": "dimension",
+        "value": "{space.32}"
+      },
+      "shadow": {
+        "type": "boxShadow",
+        "value": "{shadow.raised}"
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "tokenCount": 230,
+  "checks": [
+    "Resolved every alias; checked missing references, cycles, value types and CSS name collisions.",
+    "Validated required text and control contrast pairings.",
+    "Tokens Studio export converts typography line-height multipliers to percentages."
+  ],
+  "contrasts": [
+    {
+      "foreground": "color.text.primary",
+      "background": "color.surface.page",
+      "ratio": 9.05,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "color.text.secondary",
+      "background": "color.surface.page",
+      "ratio": 5.47,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "color.text.secondary",
+      "background": "color.surface.card",
+      "ratio": 5.6,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "color.text.primary",
+      "background": "color.surface.welcome",
+      "ratio": 7.83,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "color.action.on-primary",
+      "background": "color.action.primary",
+      "ratio": 9.05,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "color.action.on-primary",
+      "background": "color.action.hover",
+      "ratio": 11.04,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "color.action.on-primary",
+      "background": "color.action.pressed",
+      "ratio": 13.1,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "color.brand.face",
+      "background": "color.brand.character",
+      "ratio": 5.97,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "color.border.control",
+      "background": "color.surface.card",
+      "ratio": 3.64,
+      "minimum": 3
+    },
+    {
+      "foreground": "color.border.focus",
+      "background": "color.surface.page",
+      "ratio": 9.05,
+      "minimum": 3
+    },
+    {
+      "foreground": "color.status.success.foreground",
+      "background": "color.status.success.background",
+      "ratio": 6.24,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "color.status.attention.foreground",
+      "background": "color.status.attention.background",
+      "ratio": 5.92,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "color.status.error.foreground",
+      "background": "color.status.error.background",
+      "ratio": 5.99,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "color.status.info.foreground",
+      "background": "color.status.info.background",
+      "ratio": 7.83,
+      "minimum": 4.5
+    }
+  ],
+  "limitations": [
+    "This is a targeted validation of the token types used here, not a universal DTCG validator.",
+    "Figma import and native library publication have not been performed.",
+    "Token-level checks do not certify complete product accessibility."
+  ]
+}

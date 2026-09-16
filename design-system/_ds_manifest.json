@@ -1,0 +1,3288 @@
+{
+  "namespace": "BoringDesignSystem_7ec2e7",
+  "components": [
+    {
+      "name": "Badge",
+      "sourcePath": "components/core/Badge.jsx"
+    },
+    {
+      "name": "Breath",
+      "sourcePath": "components/core/Breath.jsx"
+    },
+    {
+      "name": "Button",
+      "sourcePath": "components/core/Button.jsx"
+    },
+    {
+      "name": "Card",
+      "sourcePath": "components/core/Card.jsx"
+    },
+    {
+      "name": "Icon",
+      "sourcePath": "components/core/Icon.jsx"
+    },
+    {
+      "name": "IconButton",
+      "sourcePath": "components/core/IconButton.jsx"
+    },
+    {
+      "name": "LightBand",
+      "sourcePath": "components/core/LightBand.jsx"
+    },
+    {
+      "name": "Tag",
+      "sourcePath": "components/core/Tag.jsx"
+    },
+    {
+      "name": "Dialog",
+      "sourcePath": "components/feedback/Dialog.jsx"
+    },
+    {
+      "name": "Toast",
+      "sourcePath": "components/feedback/Toast.jsx"
+    },
+    {
+      "name": "Tooltip",
+      "sourcePath": "components/feedback/Tooltip.jsx"
+    },
+    {
+      "name": "Checkbox",
+      "sourcePath": "components/forms/Checkbox.jsx"
+    },
+    {
+      "name": "Input",
+      "sourcePath": "components/forms/Input.jsx"
+    },
+    {
+      "name": "Radio",
+      "sourcePath": "components/forms/Radio.jsx"
+    },
+    {
+      "name": "Select",
+      "sourcePath": "components/forms/Select.jsx"
+    },
+    {
+      "name": "Switch",
+      "sourcePath": "components/forms/Switch.jsx"
+    },
+    {
+      "name": "Tabs",
+      "sourcePath": "components/navigation/Tabs.jsx"
+    },
+    {
+      "name": "LittleB",
+      "sourcePath": "components/core/Breath.jsx"
+    }
+  ],
+  "startingPoints": [
+    {
+      "name": "LittleB",
+      "path": "components/core/Breath.jsx",
+      "previewPath": "components/core/core.card.html",
+      "kind": "component",
+      "section": "Brand",
+      "subtitle": "Little b, still and waiting",
+      "viewport": "700x160"
+    },
+    {
+      "name": "LightBand",
+      "path": "components/core/LightBand.jsx",
+      "previewPath": "components/core/core.card.html",
+      "kind": "component",
+      "section": "Brand",
+      "subtitle": "Sky and butter welcome surfaces",
+      "viewport": "700x260"
+    },
+    {
+      "name": "Button",
+      "path": "components/core/Button.jsx",
+      "previewPath": "components/core/core.card.html",
+      "kind": "component",
+      "section": "Core",
+      "subtitle": "Primary, secondary, quiet and inverse buttons",
+      "viewport": "700x180"
+    },
+    {
+      "name": "Card",
+      "path": "components/core/Card.jsx",
+      "previewPath": "components/core/core.card.html",
+      "kind": "component",
+      "section": "Core",
+      "subtitle": "Paper, sunken and tinted card tones",
+      "viewport": "700x220"
+    },
+    {
+      "name": "app",
+      "path": "ui_kits/app/index.html",
+      "previewPath": "ui_kits/app/index.html",
+      "kind": "screen",
+      "section": "Family app",
+      "subtitle": "Mobile app shell with bottom nav and five screens",
+      "viewport": "430x860"
+    },
+    {
+      "name": "Input",
+      "path": "components/forms/Input.jsx",
+      "previewPath": "components/forms/forms.card.html",
+      "kind": "component",
+      "section": "Forms",
+      "subtitle": "Fields, select, checkbox, radio, switch",
+      "viewport": "700x320"
+    },
+    {
+      "name": "site",
+      "path": "ui_kits/site/index.html",
+      "previewPath": "ui_kits/site/index.html",
+      "kind": "screen",
+      "section": "Marketing site",
+      "subtitle": "Desktop marketing page with nav, sections and footer",
+      "viewport": "1280x900"
+    },
+    {
+      "name": "Tabs",
+      "path": "components/navigation/Tabs.jsx",
+      "previewPath": "components/navigation/navigation.card.html",
+      "kind": "component",
+      "section": "Navigation",
+      "subtitle": "Underlined tabs with optional counts",
+      "viewport": "700x120"
+    }
+  ],
+  "cards": [
+    {
+      "path": "guidelines/brand-breath.card.html",
+      "group": "Brand",
+      "viewport": "700x280",
+      "subtitle": "The approved smiling mark, in a header and while waiting",
+      "name": "Little b"
+    },
+    {
+      "path": "guidelines/brand-elevation.card.html",
+      "group": "Brand",
+      "viewport": "700x280",
+      "subtitle": "Use borders for everyday cards and soft blue shadows for floating surfaces",
+      "name": "Elevation"
+    },
+    {
+      "path": "guidelines/brand-gradients.card.html",
+      "group": "Brand",
+      "viewport": "700x280",
+      "subtitle": "Flat paper, sky, butter, and sage create warmth without decorative gradients",
+      "name": "Calm surfaces"
+    },
+    {
+      "path": "guidelines/brand-lightband.card.html",
+      "group": "Brand",
+      "viewport": "700x280",
+      "subtitle": "Sky and butter with ink text; comfortable space for a hello",
+      "name": "Welcome surfaces"
+    },
+    {
+      "path": "guidelines/brand-motion.card.html",
+      "group": "Brand",
+      "viewport": "700x280",
+      "subtitle": "Short interactions; a 3.6 s settle and 5.4 s blink while waiting",
+      "name": "Motion"
+    },
+    {
+      "path": "guidelines/brand-radii.card.html",
+      "group": "Brand",
+      "viewport": "700x280",
+      "subtitle": "8\u201332 px; controls 12, cards 18, welcome panels 26",
+      "name": "Corner radii"
+    },
+    {
+      "path": "guidelines/brand-states.card.html",
+      "group": "Brand",
+      "viewport": "700x280",
+      "subtitle": "Ink actions, visible 3 px focus, readable disabled colours",
+      "name": "Interaction states"
+    },
+    {
+      "path": "guidelines/brand-wordmark.card.html",
+      "group": "Brand",
+      "viewport": "700x280",
+      "subtitle": "Little b with lowercase Nunito Sans at weight 800",
+      "name": "Wordmark"
+    },
+    {
+      "path": "guidelines/color-lines.card.html",
+      "group": "Colors",
+      "viewport": "700x280",
+      "subtitle": "Subtle dividers, control boundaries, and disabled states",
+      "name": "Borders & disabled"
+    },
+    {
+      "path": "guidelines/color-paper-ink.card.html",
+      "group": "Colors",
+      "viewport": "700x280",
+      "subtitle": "Warm paper, deep blue, and readable secondary text",
+      "name": "Paper & ink"
+    },
+    {
+      "path": "guidelines/color-petrol.card.html",
+      "group": "Colors",
+      "viewport": "700x280",
+      "subtitle": "The approved blue for text, actions, and welcoming surfaces",
+      "name": "Ink & sky"
+    },
+    {
+      "path": "guidelines/color-sage.card.html",
+      "group": "Colors",
+      "viewport": "700x280",
+      "subtitle": "A gentle background and a readable foreground for success",
+      "name": "Sage"
+    },
+    {
+      "path": "guidelines/color-status.card.html",
+      "group": "Colors",
+      "viewport": "700x280",
+      "subtitle": "Success, attention, error, and information use paired colours and words",
+      "name": "Feedback colours"
+    },
+    {
+      "path": "guidelines/color-sun.card.html",
+      "group": "Colors",
+      "viewport": "700x280",
+      "subtitle": "Butter belongs to little b; attention uses a separate readable pair",
+      "name": "Butter & attention"
+    },
+    {
+      "path": "components/core/core.card.html",
+      "group": "Components",
+      "viewport": "700x340",
+      "subtitle": "Button, IconButton, Card, Badge, Tag, Icon, LittleB",
+      "name": "Core"
+    },
+    {
+      "path": "components/feedback/feedback.card.html",
+      "group": "Components",
+      "viewport": "700x320",
+      "subtitle": "Dialog sheet, toasts, tooltip",
+      "name": "Feedback"
+    },
+    {
+      "path": "components/forms/forms.card.html",
+      "group": "Components",
+      "viewport": "700x380",
+      "subtitle": "Input, Select, Radio rows, Checkbox, Switch",
+      "name": "Forms"
+    },
+    {
+      "path": "components/navigation/navigation.card.html",
+      "group": "Components",
+      "viewport": "700x160",
+      "subtitle": "Underlined tabs, with and without counts",
+      "name": "Navigation"
+    },
+    {
+      "path": "ui_kits/app/index.html",
+      "group": "Family app",
+      "viewport": "430x860",
+      "subtitle": "Click-through: family home, results, booking, care team, account",
+      "name": "Family app"
+    },
+    {
+      "path": "ui_kits/site/index.html",
+      "group": "Marketing site",
+      "viewport": "1280x900",
+      "subtitle": "Happy longevity: family care, plans, and enquiry preview",
+      "name": "Marketing site"
+    },
+    {
+      "path": "guidelines/spacing-in-use.card.html",
+      "group": "Spacing",
+      "viewport": "700x280",
+      "subtitle": "A simple card with 24 px padding and a clear hierarchy",
+      "name": "Spacing in use"
+    },
+    {
+      "path": "guidelines/spacing-scale.card.html",
+      "group": "Spacing",
+      "viewport": "700x280",
+      "subtitle": "4 px base; 24 px inside cards, 40 px mobile sections",
+      "name": "Spacing scale"
+    },
+    {
+      "path": "guidelines/spacing-tap-targets.card.html",
+      "group": "Spacing",
+      "viewport": "700x280",
+      "subtitle": "48 px minimum; 56 px for parents",
+      "name": "Tap targets"
+    },
+    {
+      "path": "guidelines/type-bilingual.card.html",
+      "group": "Type",
+      "viewport": "700x280",
+      "subtitle": "Mukta for Hindi and Marathi; allow expansion and validate translated layouts",
+      "name": "Bilingual"
+    },
+    {
+      "path": "guidelines/type-body.card.html",
+      "group": "Type",
+      "viewport": "700x280",
+      "subtitle": "DM Sans 17 px with a relaxed line height; 21 px for parents",
+      "name": "Body text"
+    },
+    {
+      "path": "guidelines/type-display.card.html",
+      "group": "Type",
+      "viewport": "700x280",
+      "subtitle": "Nunito Sans 700: rounded, friendly, and clear",
+      "name": "Display"
+    },
+    {
+      "path": "guidelines/type-labels-numerals.card.html",
+      "group": "Type",
+      "viewport": "700x280",
+      "subtitle": "Short 13 px labels; aligned numbers retain their units",
+      "name": "Labels & numerals"
+    },
+    {
+      "path": "guidelines/type-scale.card.html",
+      "group": "Type",
+      "viewport": "700x280",
+      "subtitle": "A clear hierarchy from labels to welcoming headlines",
+      "name": "Type scale"
+    }
+  ],
+  "templates": [],
+  "hasThumbnailHtml": true,
+  "globalCssPaths": [
+    "tokens/happy-longevity/boring.css",
+    "tokens/happy-longevity/motion.css",
+    "tokens/fonts.css",
+    "tokens/colors.css",
+    "tokens/typography.css",
+    "tokens/spacing.css",
+    "tokens/radius.css",
+    "tokens/elevation.css",
+    "tokens/motion.css",
+    "tokens/base.css",
+    "styles.css"
+  ],
+  "tokens": [
+    {
+      "name": "--text-2xs",
+      "value": "13px",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-xs",
+      "value": "15px",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-sm",
+      "value": "16px",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-base",
+      "value": "17px",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-lg",
+      "value": "19px",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-xl",
+      "value": "21px",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-2xl",
+      "value": "25px",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-3xl",
+      "value": "31px",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-4xl",
+      "value": "var(--boring-font-size-heading)",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-5xl",
+      "value": "var(--boring-font-size-display-small)",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-6xl",
+      "value": "var(--boring-font-size-display-large)",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--leading-tight",
+      "value": "1.15",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--leading-snug",
+      "value": "1.3",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--leading-normal",
+      "value": "1.5",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--leading-relaxed",
+      "value": "var(--boring-font-line-height-reading)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--weight-light",
+      "value": "300",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--weight-regular",
+      "value": "400",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--weight-medium",
+      "value": "500",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--weight-semibold",
+      "value": "600",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--tracking-display",
+      "value": "-0.022em",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--tracking-tight",
+      "value": "-0.02em",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--tracking-normal",
+      "value": "0",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--tracking-wide",
+      "value": "0.04em",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--tracking-label",
+      "value": "0.1em",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-display-font",
+      "value": "var(--font-display)",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--type-display-weight",
+      "value": "var(--boring-font-weight-bold)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-display-size",
+      "value": "var(--text-5xl)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-display-leading",
+      "value": "var(--leading-tight)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-display-tracking",
+      "value": "var(--tracking-display)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-heading-font",
+      "value": "var(--font-display)",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--type-heading-weight",
+      "value": "var(--boring-font-weight-bold)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-heading-size",
+      "value": "var(--text-3xl)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-body-font",
+      "value": "var(--font-text)",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--type-body-size",
+      "value": "var(--text-base)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-body-leading",
+      "value": "var(--leading-relaxed)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-body-weight",
+      "value": "var(--weight-regular)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-body-large-size",
+      "value": "var(--text-lg)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-label-font",
+      "value": "var(--font-text)",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--type-label-size",
+      "value": "var(--text-2xs)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-label-weight",
+      "value": "var(--weight-medium)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-label-tracking",
+      "value": "var(--tracking-label)",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--type-numeric-font",
+      "value": "var(--font-numeric)",
+      "definedIn": "tokens/typography.css",
+      "kind": "font"
+    },
+    {
+      "name": "--type-numeric-features",
+      "value": "\"tnum\" 1, \"lnum\" 1",
+      "definedIn": "tokens/typography.css",
+      "kind": "other"
+    },
+    {
+      "name": "--radius-xs",
+      "value": "var(--boring-radius-small)",
+      "definedIn": "tokens/radius.css",
+      "kind": "other"
+    },
+    {
+      "name": "--radius-sm",
+      "value": "var(--boring-radius-small)",
+      "definedIn": "tokens/radius.css",
+      "kind": "other"
+    },
+    {
+      "name": "--radius-md",
+      "value": "var(--boring-radius-control)",
+      "definedIn": "tokens/radius.css",
+      "kind": "other"
+    },
+    {
+      "name": "--radius-lg",
+      "value": "var(--boring-radius-card)",
+      "definedIn": "tokens/radius.css",
+      "kind": "other"
+    },
+    {
+      "name": "--radius-xl",
+      "value": "var(--boring-radius-hero)",
+      "definedIn": "tokens/radius.css",
+      "kind": "other"
+    },
+    {
+      "name": "--radius-2xl",
+      "value": "var(--boring-radius-sheet)",
+      "definedIn": "tokens/radius.css",
+      "kind": "other"
+    },
+    {
+      "name": "--radius-pill",
+      "value": "var(--boring-radius-pill)",
+      "definedIn": "tokens/radius.css",
+      "kind": "other"
+    },
+    {
+      "name": "--radius-card",
+      "value": "var(--boring-radius-card)",
+      "definedIn": "tokens/radius.css",
+      "kind": "other"
+    },
+    {
+      "name": "--radius-control",
+      "value": "var(--boring-radius-control)",
+      "definedIn": "tokens/radius.css",
+      "kind": "other"
+    },
+    {
+      "name": "--radius-sheet",
+      "value": "var(--boring-radius-sheet)",
+      "definedIn": "tokens/radius.css",
+      "kind": "other"
+    },
+    {
+      "name": "--radius-chip",
+      "value": "var(--boring-radius-pill)",
+      "definedIn": "tokens/radius.css",
+      "kind": "other"
+    },
+    {
+      "name": "--space-0",
+      "value": "0",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--space-1",
+      "value": "4px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--space-2",
+      "value": "8px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--space-3",
+      "value": "12px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--space-4",
+      "value": "16px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--space-5",
+      "value": "20px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--space-6",
+      "value": "24px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--space-7",
+      "value": "32px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--space-8",
+      "value": "40px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--space-9",
+      "value": "56px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--space-10",
+      "value": "var(--boring-space-80)",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--space-11",
+      "value": "96px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--space-12",
+      "value": "128px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gutter-mobile",
+      "value": "var(--boring-layout-gutter-mobile)",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gutter-desktop",
+      "value": "var(--space-8)",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--section-gap-mobile",
+      "value": "var(--space-8)",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--section-gap-desktop",
+      "value": "var(--space-11)",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--card-padding",
+      "value": "var(--space-6)",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--card-gap",
+      "value": "var(--space-4)",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--measure-prose",
+      "value": "62ch",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--measure-narrow",
+      "value": "46ch",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--container-max",
+      "value": "1120px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--container-reading",
+      "value": "720px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--tap-min",
+      "value": "48px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--tap-comfortable",
+      "value": "56px",
+      "definedIn": "tokens/spacing.css",
+      "kind": "other"
+    },
+    {
+      "name": "--paper-0",
+      "value": "var(--boring-color-surface-card)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--paper-1",
+      "value": "var(--boring-color-surface-page)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--paper-2",
+      "value": "var(--boring-color-surface-warm)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--paper-3",
+      "value": "var(--boring-palette-line)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--ink-1",
+      "value": "var(--boring-color-text-primary)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--ink-2",
+      "value": "var(--boring-color-text-primary)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--ink-3",
+      "value": "var(--boring-color-text-secondary)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--ink-4",
+      "value": "var(--boring-color-text-disabled)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--line-1",
+      "value": "var(--boring-color-border-subtle)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--line-2",
+      "value": "var(--boring-color-border-control)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--line-3",
+      "value": "var(--boring-color-border-focus)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--petrol-100",
+      "value": "var(--boring-palette-sky)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--petrol-300",
+      "value": "var(--boring-palette-sky)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--petrol-500",
+      "value": "var(--boring-palette-ink)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--petrol-600",
+      "value": "var(--boring-palette-ink)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--petrol-700",
+      "value": "var(--boring-palette-ink-hover)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--sage-100",
+      "value": "var(--boring-palette-sage)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--sage-300",
+      "value": "var(--boring-palette-sage)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--sage-500",
+      "value": "var(--boring-palette-sage-ink)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--sage-600",
+      "value": "var(--boring-palette-sage-ink)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--sage-700",
+      "value": "var(--boring-palette-sage-ink)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--sun-100",
+      "value": "var(--boring-palette-attention)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--sun-300",
+      "value": "var(--boring-palette-butter)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--sun-500",
+      "value": "var(--boring-palette-butter)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--sun-600",
+      "value": "var(--boring-palette-attention-ink)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--sun-700",
+      "value": "var(--boring-palette-attention-ink)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--stone-100",
+      "value": "var(--boring-palette-wash)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--stone-500",
+      "value": "var(--boring-palette-muted)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--stone-700",
+      "value": "var(--boring-palette-muted)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--surface-page",
+      "value": "var(--boring-color-surface-page)",
+      "definedIn": "tokens/colors.css",
+      "kind": "color"
+    },
+    {
+      "name": "--surface-card",
+      "value": "var(--boring-color-surface-card)",
+      "definedIn": "tokens/colors.css",
+      "kind": "color"
+    },
+    {
+      "name": "--surface-sunken",
+      "value": "var(--boring-color-surface-warm)",
+      "definedIn": "tokens/colors.css",
+      "kind": "color"
+    },
+    {
+      "name": "--surface-raised",
+      "value": "var(--boring-color-surface-card)",
+      "definedIn": "tokens/colors.css",
+      "kind": "color"
+    },
+    {
+      "name": "--surface-accent-soft",
+      "value": "var(--boring-color-surface-welcome)",
+      "definedIn": "tokens/colors.css",
+      "kind": "color"
+    },
+    {
+      "name": "--surface-attention-soft",
+      "value": "var(--boring-palette-attention)",
+      "definedIn": "tokens/colors.css",
+      "kind": "color"
+    },
+    {
+      "name": "--surface-calm-soft",
+      "value": "var(--boring-palette-sage)",
+      "definedIn": "tokens/colors.css",
+      "kind": "color"
+    },
+    {
+      "name": "--surface-inverse",
+      "value": "var(--boring-color-surface-inverse)",
+      "definedIn": "tokens/colors.css",
+      "kind": "color"
+    },
+    {
+      "name": "--text-title",
+      "value": "var(--boring-color-text-primary)",
+      "definedIn": "tokens/colors.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-body",
+      "value": "var(--boring-color-text-primary)",
+      "definedIn": "tokens/colors.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-muted",
+      "value": "var(--boring-color-text-secondary)",
+      "definedIn": "tokens/colors.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-faint",
+      "value": "var(--boring-color-text-disabled)",
+      "definedIn": "tokens/colors.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-on-accent",
+      "value": "var(--boring-color-text-inverse)",
+      "definedIn": "tokens/colors.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-on-inverse",
+      "value": "var(--boring-color-text-inverse)",
+      "definedIn": "tokens/colors.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-link",
+      "value": "var(--boring-color-text-link)",
+      "definedIn": "tokens/colors.css",
+      "kind": "font"
+    },
+    {
+      "name": "--text-link-hover",
+      "value": "var(--boring-color-action-hover)",
+      "definedIn": "tokens/colors.css",
+      "kind": "font"
+    },
+    {
+      "name": "--border-subtle",
+      "value": "var(--boring-color-border-subtle)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--border-default",
+      "value": "var(--boring-color-border-control)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--border-strong",
+      "value": "var(--boring-color-border-focus)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--border-focus",
+      "value": "var(--boring-color-border-focus)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--accent",
+      "value": "var(--boring-color-action-primary)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--accent-hover",
+      "value": "var(--boring-color-action-hover)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--accent-quiet",
+      "value": "var(--boring-color-action-primary)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--status-normal",
+      "value": "var(--boring-color-status-success-foreground)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--status-normal-soft",
+      "value": "var(--boring-color-status-success-background)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--status-attention",
+      "value": "var(--boring-color-status-attention-foreground)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--status-attention-soft",
+      "value": "var(--boring-color-status-attention-background)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--status-action",
+      "value": "var(--boring-color-status-info-foreground)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--status-action-soft",
+      "value": "var(--boring-color-status-info-background)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--status-neutral",
+      "value": "var(--boring-color-text-secondary)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--status-neutral-soft",
+      "value": "var(--boring-color-surface-warm)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gradient-page",
+      "value": "var(--boring-color-surface-page)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gradient-card",
+      "value": "var(--boring-color-surface-card)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gradient-sunken",
+      "value": "var(--boring-color-surface-warm)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gradient-accent",
+      "value": "var(--boring-color-action-primary)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gradient-accent-hover",
+      "value": "var(--boring-color-action-hover)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gradient-accent-soft",
+      "value": "var(--boring-color-surface-welcome)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gradient-calm-soft",
+      "value": "var(--boring-color-status-success-background)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gradient-attention-soft",
+      "value": "var(--boring-color-status-attention-background)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gradient-inverse",
+      "value": "var(--boring-color-surface-inverse)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gradient-light",
+      "value": "var(--boring-color-surface-welcome)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gradient-light-deep",
+      "value": "var(--boring-palette-butter)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--gradient-hairline",
+      "value": "var(--boring-color-border-subtle)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--focus-ring",
+      "value": "0 0 0 3px var(--boring-color-border-focus)",
+      "definedIn": "tokens/colors.css",
+      "kind": "other"
+    },
+    {
+      "name": "--shadow-none",
+      "value": "var(--boring-shadow-none)",
+      "definedIn": "tokens/elevation.css",
+      "kind": "other"
+    },
+    {
+      "name": "--shadow-hairline",
+      "value": "var(--boring-shadow-none)",
+      "definedIn": "tokens/elevation.css",
+      "kind": "other"
+    },
+    {
+      "name": "--shadow-card",
+      "value": "var(--boring-shadow-raised)",
+      "definedIn": "tokens/elevation.css",
+      "kind": "other"
+    },
+    {
+      "name": "--shadow-raised",
+      "value": "var(--boring-shadow-raised)",
+      "definedIn": "tokens/elevation.css",
+      "kind": "other"
+    },
+    {
+      "name": "--shadow-sheet",
+      "value": "var(--boring-shadow-sheet)",
+      "definedIn": "tokens/elevation.css",
+      "kind": "other"
+    },
+    {
+      "name": "--shadow-inset-well",
+      "value": "var(--boring-shadow-none)",
+      "definedIn": "tokens/elevation.css",
+      "kind": "other"
+    },
+    {
+      "name": "--font-display",
+      "value": "var(--boring-font-family-display), \"Mukta\", system-ui, sans-serif",
+      "definedIn": "tokens/fonts.css",
+      "kind": "font"
+    },
+    {
+      "name": "--font-text",
+      "value": "var(--boring-font-family-body), \"Mukta\", system-ui, sans-serif",
+      "definedIn": "tokens/fonts.css",
+      "kind": "font"
+    },
+    {
+      "name": "--font-hindi-display",
+      "value": "\"Mukta\", system-ui, sans-serif",
+      "definedIn": "tokens/fonts.css",
+      "kind": "font"
+    },
+    {
+      "name": "--font-hindi-text",
+      "value": "\"Mukta\", system-ui, sans-serif",
+      "definedIn": "tokens/fonts.css",
+      "kind": "font"
+    },
+    {
+      "name": "--font-numeric",
+      "value": "var(--font-text)",
+      "definedIn": "tokens/fonts.css",
+      "kind": "font"
+    },
+    {
+      "name": "--font-display",
+      "value": "var(--font-hindi-display)",
+      "definedIn": "tokens/fonts.css",
+      "kind": "font"
+    },
+    {
+      "name": "--font-text",
+      "value": "var(--font-hindi-text)",
+      "definedIn": "tokens/fonts.css",
+      "kind": "font"
+    },
+    {
+      "name": "--duration-instant",
+      "value": "var(--boring-motion-duration-instant)",
+      "definedIn": "tokens/motion.css",
+      "kind": "other"
+    },
+    {
+      "name": "--duration-fast",
+      "value": "var(--boring-motion-duration-fast)",
+      "definedIn": "tokens/motion.css",
+      "kind": "other"
+    },
+    {
+      "name": "--duration-base",
+      "value": "var(--boring-motion-duration-base)",
+      "definedIn": "tokens/motion.css",
+      "kind": "other"
+    },
+    {
+      "name": "--duration-slow",
+      "value": "var(--boring-motion-duration-slow)",
+      "definedIn": "tokens/motion.css",
+      "kind": "other"
+    },
+    {
+      "name": "--duration-sheet",
+      "value": "var(--boring-motion-duration-sheet)",
+      "definedIn": "tokens/motion.css",
+      "kind": "other"
+    },
+    {
+      "name": "--ease-out",
+      "value": "var(--boring-motion-easing-out)",
+      "definedIn": "tokens/motion.css",
+      "kind": "other"
+    },
+    {
+      "name": "--ease-in-out",
+      "value": "var(--boring-motion-easing-in-out)",
+      "definedIn": "tokens/motion.css",
+      "kind": "other"
+    },
+    {
+      "name": "--ease-entrance",
+      "value": "var(--boring-motion-easing-entrance)",
+      "definedIn": "tokens/motion.css",
+      "kind": "other"
+    },
+    {
+      "name": "--transition-control",
+      "value": "color var(--duration-fast) var(--ease-out), background-color var(--duration-fast) var(--ease-out), border-color var(--duration-fast) var(--ease-out)",
+      "definedIn": "tokens/motion.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-palette-paper",
+      "value": "#FFFBF2",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-card",
+      "value": "#FFFEFA",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-ink",
+      "value": "#294968",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-ink-hover",
+      "value": "#203C56",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-ink-pressed",
+      "value": "#183047",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-muted",
+      "value": "#596978",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-butter",
+      "value": "#F2CA66",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-sky",
+      "value": "#E0EDF4",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-wash",
+      "value": "#F7EFD9",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-line",
+      "value": "#DDDEDA",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-line-strong",
+      "value": "#7B8790",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-sage",
+      "value": "#E4EDDD",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-sage-ink",
+      "value": "#3E5C3B",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-attention",
+      "value": "#F8ECD4",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-attention-ink",
+      "value": "#795214",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-error",
+      "value": "#F9E7E2",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-error-ink",
+      "value": "#943B32",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-disabled",
+      "value": "#E7E7E0",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-disabled-ink",
+      "value": "#63707B",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-shadow",
+      "value": "rgb(41 73 104 / 0.16)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-scrim",
+      "value": "rgb(41 73 104 / 0.28)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-palette-phone-shadow",
+      "value": "rgb(41 73 104 / 0.33333333)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-surface-page",
+      "value": "var(--boring-palette-paper)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-surface-card",
+      "value": "var(--boring-palette-card)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-surface-welcome",
+      "value": "var(--boring-palette-sky)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-surface-warm",
+      "value": "var(--boring-palette-wash)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-surface-disabled",
+      "value": "var(--boring-palette-disabled)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-surface-inverse",
+      "value": "var(--boring-palette-ink)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-surface-scrim",
+      "value": "var(--boring-palette-scrim)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-text-primary",
+      "value": "var(--boring-palette-ink)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-color-text-secondary",
+      "value": "var(--boring-palette-muted)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-color-text-inverse",
+      "value": "var(--boring-palette-paper)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-color-text-disabled",
+      "value": "var(--boring-palette-disabled-ink)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-color-text-link",
+      "value": "var(--boring-palette-ink)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-color-brand-character",
+      "value": "var(--boring-palette-butter)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-brand-face",
+      "value": "var(--boring-palette-ink)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-border-subtle",
+      "value": "var(--boring-palette-line)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-border-control",
+      "value": "var(--boring-palette-line-strong)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-border-focus",
+      "value": "var(--boring-palette-ink)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-action-primary",
+      "value": "var(--boring-palette-ink)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-action-hover",
+      "value": "var(--boring-palette-ink-hover)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-action-pressed",
+      "value": "var(--boring-palette-ink-pressed)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-action-on-primary",
+      "value": "var(--boring-palette-paper)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-action-secondary",
+      "value": "var(--boring-palette-card)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-action-secondary-hover",
+      "value": "var(--boring-palette-sky)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-status-success-background",
+      "value": "var(--boring-palette-sage)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-status-success-foreground",
+      "value": "var(--boring-palette-sage-ink)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-status-attention-background",
+      "value": "var(--boring-palette-attention)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-status-attention-foreground",
+      "value": "var(--boring-palette-attention-ink)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-status-error-background",
+      "value": "var(--boring-palette-error)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-status-error-foreground",
+      "value": "var(--boring-palette-error-ink)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-status-info-background",
+      "value": "var(--boring-palette-sky)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-color-status-info-foreground",
+      "value": "var(--boring-palette-ink)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-font-family-display",
+      "value": "\"Nunito Sans\"",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-family-body",
+      "value": "\"DM Sans\"",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-family-devanagari",
+      "value": "\"Mukta\"",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-weight-regular",
+      "value": "400",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-weight-medium",
+      "value": "500",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-weight-semibold",
+      "value": "600",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-weight-bold",
+      "value": "700",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-weight-extra-bold",
+      "value": "800",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-size-label",
+      "value": "13px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-size-small",
+      "value": "15px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-size-body",
+      "value": "17px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-size-large",
+      "value": "19px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-size-parent",
+      "value": "21px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-size-title",
+      "value": "24px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-size-heading-small",
+      "value": "31px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-size-wordmark",
+      "value": "34px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-size-heading",
+      "value": "36px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-size-heading-large",
+      "value": "42px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-size-display-small",
+      "value": "46px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-size-display-large",
+      "value": "78px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-size-button",
+      "value": "16px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-line-height-wordmark",
+      "value": "1",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-line-height-display",
+      "value": "1.08",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-line-height-heading",
+      "value": "1.18",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-line-height-title",
+      "value": "1.3",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-line-height-control",
+      "value": "1.4",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-line-height-body",
+      "value": "1.6",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-line-height-reading",
+      "value": "1.65",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-tracking-normal",
+      "value": "0px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-tracking-label",
+      "value": "1.3px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-tracking-title",
+      "value": "-0.4px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-tracking-heading",
+      "value": "-1.2px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-tracking-display-small",
+      "value": "-2.4px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-tracking-display-large",
+      "value": "-3.2px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-font-tracking-wordmark",
+      "value": "-1.7px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-display-large-font-family",
+      "value": "var(--boring-font-family-display)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-display-large-font-weight",
+      "value": "var(--boring-font-weight-bold)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-display-large-font-size",
+      "value": "var(--boring-font-size-display-large)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-display-large-letter-spacing",
+      "value": "var(--boring-font-tracking-display-large)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-display-large-line-height",
+      "value": "var(--boring-font-line-height-display)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-display-large",
+      "value": "var(--boring-typography-display-large-font-weight) var(--boring-typography-display-large-font-size)/var(--boring-typography-display-large-line-height) var(--boring-typography-display-large-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-display-small-font-family",
+      "value": "var(--boring-font-family-display)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-display-small-font-weight",
+      "value": "var(--boring-font-weight-bold)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-display-small-font-size",
+      "value": "var(--boring-font-size-display-small)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-display-small-letter-spacing",
+      "value": "var(--boring-font-tracking-display-small)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-display-small-line-height",
+      "value": "var(--boring-font-line-height-display)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-display-small",
+      "value": "var(--boring-typography-display-small-font-weight) var(--boring-typography-display-small-font-size)/var(--boring-typography-display-small-line-height) var(--boring-typography-display-small-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-large-font-family",
+      "value": "var(--boring-font-family-display)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-large-font-weight",
+      "value": "var(--boring-font-weight-bold)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-large-font-size",
+      "value": "var(--boring-font-size-heading-large)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-large-letter-spacing",
+      "value": "var(--boring-font-tracking-heading)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-large-line-height",
+      "value": "var(--boring-font-line-height-heading)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-large",
+      "value": "var(--boring-typography-heading-large-font-weight) var(--boring-typography-heading-large-font-size)/var(--boring-typography-heading-large-line-height) var(--boring-typography-heading-large-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-font-family",
+      "value": "var(--boring-font-family-display)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-font-weight",
+      "value": "var(--boring-font-weight-bold)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-font-size",
+      "value": "var(--boring-font-size-heading)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-letter-spacing",
+      "value": "var(--boring-font-tracking-heading)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-line-height",
+      "value": "var(--boring-font-line-height-heading)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading",
+      "value": "var(--boring-typography-heading-font-weight) var(--boring-typography-heading-font-size)/var(--boring-typography-heading-line-height) var(--boring-typography-heading-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-small-font-family",
+      "value": "var(--boring-font-family-display)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-small-font-weight",
+      "value": "var(--boring-font-weight-bold)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-small-font-size",
+      "value": "var(--boring-font-size-heading-small)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-small-letter-spacing",
+      "value": "var(--boring-font-tracking-heading)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-small-line-height",
+      "value": "var(--boring-font-line-height-heading)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-heading-small",
+      "value": "var(--boring-typography-heading-small-font-weight) var(--boring-typography-heading-small-font-size)/var(--boring-typography-heading-small-line-height) var(--boring-typography-heading-small-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-title-font-family",
+      "value": "var(--boring-font-family-display)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-title-font-weight",
+      "value": "var(--boring-font-weight-bold)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-title-font-size",
+      "value": "var(--boring-font-size-title)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-title-letter-spacing",
+      "value": "var(--boring-font-tracking-title)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-title-line-height",
+      "value": "var(--boring-font-line-height-title)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-title",
+      "value": "var(--boring-typography-title-font-weight) var(--boring-typography-title-font-size)/var(--boring-typography-title-line-height) var(--boring-typography-title-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-font-family",
+      "value": "var(--boring-font-family-body)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-font-weight",
+      "value": "var(--boring-font-weight-regular)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-font-size",
+      "value": "var(--boring-font-size-body)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-letter-spacing",
+      "value": "var(--boring-font-tracking-normal)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-line-height",
+      "value": "var(--boring-font-line-height-body)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body",
+      "value": "var(--boring-typography-body-font-weight) var(--boring-typography-body-font-size)/var(--boring-typography-body-line-height) var(--boring-typography-body-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-large-font-family",
+      "value": "var(--boring-font-family-body)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-large-font-weight",
+      "value": "var(--boring-font-weight-regular)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-large-font-size",
+      "value": "var(--boring-font-size-large)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-large-letter-spacing",
+      "value": "var(--boring-font-tracking-normal)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-large-line-height",
+      "value": "var(--boring-font-line-height-reading)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-large",
+      "value": "var(--boring-typography-body-large-font-weight) var(--boring-typography-body-large-font-size)/var(--boring-typography-body-large-line-height) var(--boring-typography-body-large-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-parent-font-family",
+      "value": "var(--boring-font-family-body)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-parent-font-weight",
+      "value": "var(--boring-font-weight-regular)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-parent-font-size",
+      "value": "var(--boring-font-size-parent)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-parent-letter-spacing",
+      "value": "var(--boring-font-tracking-normal)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-parent-line-height",
+      "value": "var(--boring-font-line-height-reading)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-parent",
+      "value": "var(--boring-typography-body-parent-font-weight) var(--boring-typography-body-parent-font-size)/var(--boring-typography-body-parent-line-height) var(--boring-typography-body-parent-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-small-font-family",
+      "value": "var(--boring-font-family-body)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-small-font-weight",
+      "value": "var(--boring-font-weight-regular)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-small-font-size",
+      "value": "var(--boring-font-size-small)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-small-letter-spacing",
+      "value": "var(--boring-font-tracking-normal)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-small-line-height",
+      "value": "var(--boring-font-line-height-body)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-body-small",
+      "value": "var(--boring-typography-body-small-font-weight) var(--boring-typography-body-small-font-size)/var(--boring-typography-body-small-line-height) var(--boring-typography-body-small-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-label-font-family",
+      "value": "var(--boring-font-family-body)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-label-font-weight",
+      "value": "var(--boring-font-weight-semibold)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-label-font-size",
+      "value": "var(--boring-font-size-label)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-label-letter-spacing",
+      "value": "var(--boring-font-tracking-label)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-label-line-height",
+      "value": "var(--boring-font-line-height-body)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-label",
+      "value": "var(--boring-typography-label-font-weight) var(--boring-typography-label-font-size)/var(--boring-typography-label-line-height) var(--boring-typography-label-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-button-font-family",
+      "value": "var(--boring-font-family-body)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-button-font-weight",
+      "value": "var(--boring-font-weight-semibold)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-button-font-size",
+      "value": "var(--boring-font-size-button)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-button-letter-spacing",
+      "value": "var(--boring-font-tracking-normal)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-button-line-height",
+      "value": "var(--boring-font-line-height-control)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-button",
+      "value": "var(--boring-typography-button-font-weight) var(--boring-typography-button-font-size)/var(--boring-typography-button-line-height) var(--boring-typography-button-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-wordmark-font-family",
+      "value": "var(--boring-font-family-display)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-wordmark-font-weight",
+      "value": "var(--boring-font-weight-extra-bold)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-wordmark-font-size",
+      "value": "var(--boring-font-size-wordmark)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-wordmark-letter-spacing",
+      "value": "var(--boring-font-tracking-wordmark)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-wordmark-line-height",
+      "value": "var(--boring-font-line-height-wordmark)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-typography-wordmark",
+      "value": "var(--boring-typography-wordmark-font-weight) var(--boring-typography-wordmark-font-size)/var(--boring-typography-wordmark-line-height) var(--boring-typography-wordmark-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-space-0",
+      "value": "0px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-4",
+      "value": "4px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-8",
+      "value": "8px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-12",
+      "value": "12px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-16",
+      "value": "16px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-20",
+      "value": "20px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-24",
+      "value": "24px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-32",
+      "value": "32px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-40",
+      "value": "40px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-48",
+      "value": "48px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-56",
+      "value": "56px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-64",
+      "value": "64px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-80",
+      "value": "80px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-96",
+      "value": "96px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-space-128",
+      "value": "128px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-radius-small",
+      "value": "8px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-radius-control",
+      "value": "12px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-radius-card",
+      "value": "18px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-radius-panel",
+      "value": "20px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-radius-hero",
+      "value": "26px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-radius-sheet",
+      "value": "32px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-radius-pill",
+      "value": "9999px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-border-hairline",
+      "value": "1px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-border-control",
+      "value": "1px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-border-focus",
+      "value": "3px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-border-focus-offset",
+      "value": "3px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-border-icon-stroke",
+      "value": "1.7px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-size-icon-inline",
+      "value": "18px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-size-icon-control",
+      "value": "22px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-size-icon-navigation",
+      "value": "24px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-size-icon-large",
+      "value": "32px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-size-touch-minimum",
+      "value": "48px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-size-touch-parent",
+      "value": "56px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-size-avatar-small",
+      "value": "32px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-size-avatar-medium",
+      "value": "40px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-size-avatar-large",
+      "value": "56px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-size-logo-minimum",
+      "value": "24px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-size-logo-navigation",
+      "value": "34px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-size-logo-loader",
+      "value": "88px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-size-logo-hero",
+      "value": "218px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layout-content-wide",
+      "value": "1440px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layout-content",
+      "value": "1120px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layout-reading",
+      "value": "720px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layout-breakpoint-mobile",
+      "value": "720px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layout-breakpoint-tablet",
+      "value": "1050px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layout-breakpoint-wide",
+      "value": "1500px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layout-gutter-mobile",
+      "value": "var(--boring-space-24)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layout-gutter-desktop",
+      "value": "var(--boring-space-40)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layout-section-mobile",
+      "value": "var(--boring-space-40)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layout-section-desktop",
+      "value": "var(--boring-space-80)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layout-card-padding",
+      "value": "var(--boring-space-24)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layout-card-gap",
+      "value": "var(--boring-space-16)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-duration-instant",
+      "value": "90ms",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-duration-fast",
+      "value": "140ms",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-duration-base",
+      "value": "220ms",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-duration-slow",
+      "value": "340ms",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-duration-sheet",
+      "value": "420ms",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-duration-loader",
+      "value": "3600ms",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-duration-blink",
+      "value": "5400ms",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-duration-reduced",
+      "value": "1ms",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-easing-out",
+      "value": "cubic-bezier(0.22, 0.61, 0.36, 1)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-easing-in-out",
+      "value": "cubic-bezier(0.42, 0, 0.58, 1)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-easing-entrance",
+      "value": "cubic-bezier(0.16, 0.84, 0.44, 1)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-loader-rotate-start",
+      "value": "-5",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-loader-rotate-end",
+      "value": "4",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-loader-rise",
+      "value": "-3px",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-motion-loader-blink-scale",
+      "value": "0.1",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-opacity-disabled",
+      "value": "0.48",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-opacity-decorative-shadow",
+      "value": "0.07",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layer-base",
+      "value": "0",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layer-sticky",
+      "value": "10",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layer-dropdown",
+      "value": "20",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layer-scrim",
+      "value": "40",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layer-dialog",
+      "value": "50",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-layer-toast",
+      "value": "60",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-shadow-none",
+      "value": "0px 0px 0px 0px var(--boring-palette-shadow)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-shadow-raised",
+      "value": "0px 16px 40px -20px var(--boring-palette-shadow)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-shadow-sheet",
+      "value": "0px -10px 52px -20px var(--boring-palette-shadow)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-shadow-presentation",
+      "value": "0px 22px 45px -30px var(--boring-palette-phone-shadow)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-button-background",
+      "value": "var(--boring-color-action-primary)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-button-hover",
+      "value": "var(--boring-color-action-hover)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-button-pressed",
+      "value": "var(--boring-color-action-pressed)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-button-text",
+      "value": "var(--boring-color-action-on-primary)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-component-button-radius",
+      "value": "var(--boring-radius-control)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-button-height",
+      "value": "var(--boring-size-touch-minimum)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-button-parent-height",
+      "value": "var(--boring-size-touch-parent)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-button-padding-inline",
+      "value": "var(--boring-space-24)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-button-gap",
+      "value": "var(--boring-space-8)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-button-type-font-family",
+      "value": "var(--boring-typography-button-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-component-button-type-font-weight",
+      "value": "var(--boring-typography-button-font-weight)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-component-button-type-font-size",
+      "value": "var(--boring-typography-button-font-size)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-component-button-type-letter-spacing",
+      "value": "var(--boring-typography-button-letter-spacing)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-button-type-line-height",
+      "value": "var(--boring-typography-button-line-height)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-button-type",
+      "value": "var(--boring-component-button-type-font-weight) var(--boring-component-button-type-font-size)/var(--boring-component-button-type-line-height) var(--boring-component-button-type-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-card-background",
+      "value": "var(--boring-color-surface-card)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-card-border",
+      "value": "var(--boring-color-border-subtle)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-card-radius",
+      "value": "var(--boring-radius-card)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-card-padding",
+      "value": "var(--boring-space-24)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-card-gap",
+      "value": "var(--boring-space-16)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-card-shadow",
+      "value": "var(--boring-shadow-none)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-input-background",
+      "value": "var(--boring-color-surface-card)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-input-text",
+      "value": "var(--boring-color-text-primary)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-component-input-placeholder",
+      "value": "var(--boring-color-text-secondary)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-input-border",
+      "value": "var(--boring-color-border-control)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-input-focus-border",
+      "value": "var(--boring-color-border-focus)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-input-error-border",
+      "value": "var(--boring-color-status-error-foreground)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-input-radius",
+      "value": "var(--boring-radius-control)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-input-height",
+      "value": "var(--boring-size-touch-minimum)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-input-parent-height",
+      "value": "var(--boring-size-touch-parent)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-input-padding-inline",
+      "value": "var(--boring-space-16)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-input-type-font-family",
+      "value": "var(--boring-typography-body-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-component-input-type-font-weight",
+      "value": "var(--boring-typography-body-font-weight)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-component-input-type-font-size",
+      "value": "var(--boring-typography-body-font-size)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-component-input-type-letter-spacing",
+      "value": "var(--boring-typography-body-letter-spacing)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-input-type-line-height",
+      "value": "var(--boring-typography-body-line-height)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-input-type",
+      "value": "var(--boring-component-input-type-font-weight) var(--boring-component-input-type-font-size)/var(--boring-component-input-type-line-height) var(--boring-component-input-type-font-family)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-chip-background",
+      "value": "var(--boring-color-status-success-background)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-chip-text",
+      "value": "var(--boring-color-status-success-foreground)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-component-chip-radius",
+      "value": "var(--boring-radius-pill)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-chip-padding-inline",
+      "value": "var(--boring-space-12)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-chip-padding-block",
+      "value": "var(--boring-space-4)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-welcome-background",
+      "value": "var(--boring-color-surface-welcome)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-welcome-text",
+      "value": "var(--boring-color-text-primary)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "font"
+    },
+    {
+      "name": "--boring-component-welcome-radius",
+      "value": "var(--boring-radius-hero)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-welcome-padding",
+      "value": "var(--boring-space-24)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-focus-color",
+      "value": "var(--boring-color-border-focus)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "color"
+    },
+    {
+      "name": "--boring-component-focus-width",
+      "value": "var(--boring-border-focus)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-focus-offset",
+      "value": "var(--boring-border-focus-offset)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-loader-body",
+      "value": "var(--boring-color-brand-character)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-loader-face",
+      "value": "var(--boring-color-brand-face)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-loader-size",
+      "value": "var(--boring-size-logo-loader)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-loader-duration",
+      "value": "var(--boring-motion-duration-loader)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-loader-blink-duration",
+      "value": "var(--boring-motion-duration-blink)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-loader-easing",
+      "value": "var(--boring-motion-easing-in-out)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-dialog-background",
+      "value": "var(--boring-color-surface-card)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-dialog-scrim",
+      "value": "var(--boring-color-surface-scrim)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-dialog-radius",
+      "value": "var(--boring-radius-sheet)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-dialog-padding",
+      "value": "var(--boring-space-32)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-component-dialog-shadow",
+      "value": "var(--boring-shadow-raised)",
+      "definedIn": "tokens/happy-longevity/boring.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-eye-animation",
+      "value": "boring-blink var(--boring-component-loader-blink-duration) var(--boring-component-loader-easing) infinite",
+      "definedIn": "tokens/happy-longevity/motion.css",
+      "kind": "other"
+    },
+    {
+      "name": "--boring-eye-animation",
+      "value": "none",
+      "definedIn": "tokens/happy-longevity/motion.css",
+      "kind": "other"
+    }
+  ],
+  "themes": [
+    {
+      "selector": "[data-lang=\"hi\"]",
+      "label": "Lang Hi"
+    }
+  ],
+  "fonts": [],
+  "brandFonts": [
+    {
+      "family": "Nunito Sans",
+      "status": "ok",
+      "tokens": [
+        "--font-display"
+      ],
+      "path": "tokens/fonts.css"
+    },
+    {
+      "family": "DM Sans",
+      "status": "ok",
+      "tokens": [
+        "--font-text",
+        "--font-numeric"
+      ],
+      "path": "tokens/fonts.css"
+    },
+    {
+      "family": "Mukta",
+      "status": "ok",
+      "tokens": [
+        "--font-hindi-display",
+        "--font-hindi-text"
+      ],
+      "path": "tokens/fonts.css"
+    }
+  ],
+  "source": "spa"
+}
