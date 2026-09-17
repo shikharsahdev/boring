@@ -60,7 +60,7 @@ function BottomNav({ tab, onChange }) {
 
 function Phone({ children }) {
   return (
-    <div style={{ display: "flex", justifyContent: "center", padding: "var(--space-7) 0" }}>
+    <div style={{ display: "flex", justifyContent: "center", width: 390, maxWidth: "100%", padding: "var(--space-7) 0" }}>
       <div style={{ width: "min(390px, 100%)", height: 780, borderRadius: 44, padding: 10, background: "var(--paper-3)", boxShadow: "var(--shadow-raised)" }}>
         <div style={{ position: "relative", display: "flex", flexDirection: "column", height: "100%", borderRadius: 36, overflow: "hidden", background: "var(--gradient-page)" }}>
           {children}

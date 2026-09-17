@@ -1,30 +1,118 @@
 <!-- @dsCard group="Family app" viewport="430x860" name="Family app" subtitle="Click-through: family home, results, booking, care team, account" -->
 <!-- @startingPoint section="Family app" subtitle="Mobile app shell with bottom nav and five screens" viewport="430x860" -->
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Boring — family app</title>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Boring — app flows</title>
 <link rel="stylesheet" href="../../styles.css">
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 <script src="../../_ds_bundle.js"></script>
-<style>body{background:var(--paper-2)}@keyframes boring-dialog-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}</style>
+<style>body{background:var(--paper-2)}.home-carousel::-webkit-scrollbar{display:none}@keyframes boring-dialog-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}</style>
 </head><body>
 <div id="root"></div>
 <script type="text/babel" src="Shell.jsx"></script>
+<script type="text/babel" src="HomeStates.jsx"></script>
+<script type="text/babel" src="HomeFeed.jsx"></script>
 <script type="text/babel" src="HomeScreen.jsx"></script>
 <script type="text/babel" src="ResultsScreen.jsx"></script>
 <script type="text/babel" src="VisitsScreen.jsx"></script>
 <script type="text/babel" src="CareScreen.jsx"></script>
 <script type="text/babel" src="YouScreen.jsx"></script>
+<script type="text/babel" src="OnboardingFlow.jsx"></script>
 <script type="text/babel">
-function App() {
-  const [tab, setTab] = React.useState("home");
-  const screens = { home: HomeScreen, results: ResultsScreen, visits: VisitsScreen, care: CareScreen, you: YouScreen };
-  const Screen = screens[tab];
+const appSteps = navItems.map((n) => ({ id: n.id, label: n.label }));
+
+// Add a flow here: steps drive the rail, render draws the phone contents.
+const flows = [
+  {
+    id: "onboarding", label: "Signup & onboarding", steps: onboardingSteps,
+    render: ({ step, setStep, switchFlow }) => <OnboardingFlow step={step} setStep={setStep} exit={() => switchFlow("app", "home")} />,
+  },
+  {
+    id: "app", label: "App", steps: appSteps,
+    render: ({ step, setStep, switchFlow, home }) => {
+      const Screen = { home: HomeScreen, results: ResultsScreen, visits: VisitsScreen, care: CareScreen, you: YouScreen }[step];
+      return <><Screen go={setStep} home={home} openFlow={switchFlow} /><BottomNav tab={step} onChange={setStep} /></>;
+    },
+    panel: ({ step, home, setHome }) => (step === "home" ? <HomeStatePanel state={home} setState={setHome} /> : null),
+  },
+];
+
+function readHash() {
+  const [f, s] = location.hash.slice(1).split("/");
+  const flow = flows.find((x) => x.id === f) || flows[0];
+  const step = flow.steps.some((x) => x.id === s) ? s : flow.steps[0].id;
+  return { flow: flow.id, step };
+}
+
+function Pills({ value, onChange }) {
   return (
-    <Phone>
-      <Screen go={setTab} />
-      <BottomNav tab={tab} onChange={setTab} />
-    </Phone>
+    <div role="tablist" aria-label="Flows" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "var(--space-2)" }}>
+      {flows.map((f) => {
+        const on = f.id === value;
+        return (
+          <button key={f.id} role="tab" aria-selected={on} onClick={() => onChange(f.id)} style={{
+            minHeight: 40, padding: "0 var(--space-5)", borderRadius: 999, cursor: "pointer",
+            border: `1.5px solid ${on ? "var(--accent)" : "var(--border-subtle)"}`,
+            background: on ? "var(--accent)" : "var(--surface-card)", color: on ? "var(--text-on-accent)" : "var(--text-title)",
+            fontFamily: "var(--font-text)", fontSize: "var(--text-sm)", fontWeight: "var(--weight-medium)",
+          }}>{f.label}</button>
+        );
+      })}
+    </div>
+  );
+}
+
+function StepRail({ steps, step, onPick }) {
+  return (
+    <ol style={{ listStyle: "none", margin: 0, padding: 0, width: 260, display: "grid", gap: 2 }}>
+      {steps.map((s, i) => {
+        const on = s.id === step;
+        return (
+          <li key={s.id}>
+            <button onClick={() => onPick(s.id)} aria-current={on ? "step" : undefined} style={{
+              display: "grid", gridTemplateColumns: "28px 1fr", gap: "var(--space-3)", width: "100%", padding: "var(--space-3)",
+              border: "none", borderRadius: 12, background: on ? "var(--surface-card)" : "transparent", boxShadow: on ? "var(--shadow-card, none)" : "none",
+              textAlign: "left", cursor: "pointer", fontFamily: "var(--font-text)",
+            }}>
+              <span className="ds-num" style={{
+                display: "flex", alignItems: "center", justifyContent: "center", width: 28, height: 28, borderRadius: 999, fontSize: 13,
+                background: on ? "var(--accent)" : "var(--paper-3)", color: on ? "var(--text-on-accent)" : "var(--ink-2)",
+              }}>{i + 1}</span>
+              <span>
+                <span style={{ display: "block", fontSize: "var(--text-sm)", fontWeight: "var(--weight-medium)", color: "var(--text-title)" }}>{s.label}</span>
+                {s.note ? <span style={{ display: "block", marginTop: 2, fontSize: "var(--text-xs)", lineHeight: 1.4, color: "var(--text-muted)" }}>{s.note}</span> : null}
+              </span>
+            </button>
+          </li>
+        );
+      })}
+    </ol>
+  );
+}
+
+function App() {
+  const [state, setState] = React.useState(readHash);
+  const [home, setHome] = React.useState(homeDefaults);
+  React.useEffect(() => { history.replaceState(null, "", `#${state.flow}/${state.step}`); }, [state]);
+  React.useEffect(() => {
+    const onHash = () => setState(readHash());
+    addEventListener("hashchange", onHash);
+    return () => removeEventListener("hashchange", onHash);
+  }, []);
+  const flow = flows.find((f) => f.id === state.flow);
+  const setStep = (step) => setState((s) => ({ ...s, step }));
+  const switchFlow = (id, step) => setState({ flow: id, step: step || flows.find((f) => f.id === id).steps[0].id });
+  return (
+    <div style={{ padding: "var(--space-6) var(--space-5) 0" }}>
+      <Pills value={state.flow} onChange={(id) => switchFlow(id)} />
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "flex-start", gap: "var(--space-7)" }}>
+        <div style={{ paddingTop: "var(--space-7)" }}>
+          <StepRail steps={flow.steps} step={state.step} onPick={setStep} />
+          {flow.panel ? flow.panel({ step: state.step, home, setHome }) : null}
+        </div>
+        <Phone>{flow.render({ step: state.step, setStep, switchFlow, home })}</Phone>
+      </div>
+    </div>
   );
 }
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
